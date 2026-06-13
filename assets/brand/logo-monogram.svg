@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg-fill { fill: none; }
+      .navy-stroke { stroke: #0E1A2B; stroke-width: 1.5; fill: none; }
+      .gold-stroke { stroke: #C9A35A; stroke-width: 1; fill: none; }
+      .solid-navy { fill: #0E1A2B; }
+      .monogram-text { font-family: 'Playfair Display', Georgia, serif; font-size: 38px; fill: #0E1A2B; font-weight: normal; }
+    </style>
+  </defs>
+
+  <rect width="100%" height="100%" class="bg-fill" />
+  
+  <!-- Outer Rings -->
+  <circle cx="50" cy="50" r="44" class="navy-stroke" style="stroke-width: 2;" />
+  <circle cx="50" cy="50" r="40" class="gold-stroke" />
+  
+  <!-- Monogram text -->
+  <text x="50" y="62" text-anchor="middle" class="monogram-text">HH</text>
+  
+</svg>

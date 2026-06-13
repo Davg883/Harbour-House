@@ -1,0 +1,51 @@
+[
+  {
+    "category": "Food Posts",
+    "title": "Fresh Local Catch Features",
+    "preferred": "Landed this morning, on your plate tonight. Our fresh local cod is double-battered, fried golden, and served with chunky chips right on the harbour wall. A Ryde Marina classic. 🐟✨\n\nBook your table: [Link]",
+    "avoid": "Get our amazing Fish & Chips now! It is super cheap and delicious. Best food on the island! Buy 1 get 1 free. #food #yummy #cod #chips",
+    "rationale": "Preferred tone focuses on origin, quality, and the marina setting (relaxed, local, premium). The 'Avoid' copy is overly promotional, loud, and feels like a fast-food franchise rather than an editorial coastal venue."
+  },
+  {
+    "category": "Cocktails",
+    "title": "Golden Hour Mojitos",
+    "preferred": "Muddled lime, fresh garden mint, and premium white rum. Sip a classic Piña colada or a fresh Mojito as the sun slips below the Solent. Golden hour starts now at Ryde Marina. 🍹🌅",
+    "avoid": "CHEAP DRINKS TONIGHT! Get wasted on Mojitos and Pina Coladas. Happy hour starts at 5. Best alcohol in town! #drinks #bar #party",
+    "rationale": "Preferred copy paints a picture of sensory enjoyment and connects drinks to the sunset scenery. 'Avoid' copy promotes excessive drinking, uses low-rent phrasing ('cheap', 'get wasted'), and violates the premium brand positioning."
+  },
+  {
+    "category": "Events",
+    "title": "Live Acoustic Sessions",
+    "preferred": "Unwind on the harbour wall with live acoustic sessions this Thursday. Ease into the weekend early with local sounds, fresh tapas, and waterfront views. Music begins at 6 PM. 🎸🌊",
+    "avoid": "JAZZ EVENT ON THURSDAY! Loud music and heavy beats. Come party and dance all night long. Don't miss out! #livemusic #partytime",
+    "rationale": "Preferred copy uses smooth, inviting words ('unwind', 'ease into', 'local sounds') that match a relaxed social environment. 'Avoid' copy uses high-intensity punctuation, caps lock, and exaggerates the volume/energy level."
+  },
+  {
+    "category": "Group Bookings",
+    "title": "Celebrations by the Water",
+    "preferred": "Gather around the table for birthdays, family catch-ups, or corporate socials. With sharing boards, custom drinks packages, and the marina as your backdrop, let us host your next milestone. 🥂⚓️\n\nEnquire here: [Link]",
+    "avoid": "BOOK YOUR WEDDING OR PARTY HERE! We fit 100 people. Cheap group deals. Inquire now or lose your slot.",
+    "rationale": "Preferred copy focuses on hospitality, gathering, and the backdrop. It lists appropriate events without over-promising large-scale wedding services. 'Avoid' is high-pressure and transaction-oriented."
+  },
+  {
+    "category": "Sundown Sessions",
+    "title": "Sunset Vibe Announcements",
+    "preferred": "The sky is turning orange, and the acoustic tunes are flowing. Our Sundown Sessions are running all weekend. Join us on the decking for ice-cold beers, fresh Rosé, and unmatched waterfront vibes. 🌅🎶",
+    "avoid": "Sunset is at 8PM tonight! Come buy some food before the sun goes down! #sunset #isleofwight",
+    "rationale": "Preferred copy describes the transition into evening (color, music, atmosphere) to create an experience. 'Avoid' is dry, purely informational, and sounds like a weather forecast."
+  },
+  {
+    "category": "Weather Posts",
+    "title": "Sunny Decking Weather",
+    "preferred": "The Solent is flat, the yachts are sailing, and our deck is officially open. Grab a spot by the railings, soak up the sun, and enjoy a fresh Moules marinière with a glass of Picpoul de Pinet. ☀️⛵️",
+    "avoid": "It's hot outside today. Come to Ryde Marina. We have shade and tables available.",
+    "rationale": "Preferred copy ties the weather to specific sensory elements (flat Solent, yachts, cold wine, hot mussels) to create desire. 'Avoid' is flat and uninspiring."
+  },
+  {
+    "category": "Call to Action (CTA)",
+    "title": "Table Booking CTA",
+    "preferred": "Book your harbour-side table: [Link]\nJoin us for sunsets & sharing plates: [Link]",
+    "avoid": "CLICK HERE TO BUY A TABLE NOW!!! BOOK OR MISS OUT!!!",
+    "rationale": "Preferred CTAs are direct, helpful, and describe what the customer will experience ('harbour-side table', 'sunsets & sharing plates'). 'Avoid' is aggressive, spammy, and cheapens the brand."
+  }
+]

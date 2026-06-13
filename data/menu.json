@@ -1,0 +1,712 @@
+[
+  {
+    "category": "Start by the Sea",
+    "description": "Fresh, light coastal bites perfect for opening your meal.",
+    "items": [
+      {
+        "id": "item-calamari",
+        "name": "Crispy Salt & Pepper Calamari",
+        "price": 10.0,
+        "description": "Tender squid rings, seasoned salt & pepper crust, fresh chilli, spring onions, fresh lemon, house tartare.",
+        "markers": [
+          "Customer Favourite"
+        ],
+        "allergens": [
+          "Gluten",
+          "Molluscs",
+          "Egg"
+        ]
+      },
+      {
+        "id": "item-prawns",
+        "name": "Tempura Prawns",
+        "price": 8.0,
+        "description": "Crispy light tempura battered tiger prawns, served with a sweet chilli dipping sauce and fresh lime.",
+        "markers": [
+          "Coastal Pick"
+        ],
+        "allergens": [
+          "Gluten",
+          "Crustaceans"
+        ]
+      },
+      {
+        "id": "item-gambas",
+        "name": "Gambas Pil Pil",
+        "price": 12.0,
+        "description": "Sizzling king prawns cooked in rich garlic butter, onions, and spicy chorizo. Served with lemon.",
+        "markers": [
+          "Spicy",
+          "Chef Special"
+        ],
+        "allergens": [
+          "Milk",
+          "Crustaceans",
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-peppers",
+        "name": "Blistered Padrón Peppers",
+        "price": 10.0,
+        "description": "Pan-seared Padrón peppers with sea salt, served alongside grilled Cypriot halloumi cheese.",
+        "markers": [
+          "Vegetarian"
+        ],
+        "allergens": [
+          "Milk"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Made for Sharing",
+    "description": "Social plates designed to be shared among friends on the harbour wall.",
+    "items": [
+      {
+        "id": "item-dirty-fries",
+        "name": "Dirty Fries",
+        "price": 8.0,
+        "description": "Crispy seasoned fries topped with smokey chopped bacon, red onion, garlic butter, fresh chilli, and melted cheddar.",
+        "markers": [
+          "Social Classic"
+        ],
+        "allergens": [
+          "Milk"
+        ]
+      },
+      {
+        "id": "item-lamb-fries",
+        "name": "Braised Lamb Fries",
+        "price": 14.0,
+        "description": "Rustic skin-on fries loaded with slow-cooked shoulder lamb, sweet mint oil, crumbled Greek feta, and roasted sweet peppers.",
+        "markers": [
+          "Customer Favourite",
+          "Premium Sharing"
+        ],
+        "allergens": [
+          "Milk",
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-mushrooms",
+        "name": "Garlic Butter Mushrooms",
+        "price": 8.0,
+        "description": "Sautéed field mushrooms drenched in garlic, herbs, and local farm butter. Served hot.",
+        "markers": [
+          "Vegetarian",
+          "Local Supplier"
+        ],
+        "allergens": [
+          "Milk"
+        ]
+      },
+      {
+        "id": "item-mozzarella",
+        "name": "Mozzarella Sticks",
+        "price": 12.0,
+        "description": "Golden breaded mozzarella cheese sticks, melting centre, served with a rich tomato and herb dip.",
+        "markers": [
+          "Vegetarian"
+        ],
+        "allergens": [
+          "Gluten",
+          "Milk"
+        ]
+      },
+      {
+        "id": "item-meatballs",
+        "name": "Oven Baked Meatballs",
+        "price": 10.0,
+        "description": "Seasoned beef and pork meatballs, baked in a rich house garlic red pepper sauce, glazed with mozzarella.",
+        "markers": [
+          "Comfort Food"
+        ],
+        "allergens": [
+          "Gluten",
+          "Milk"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Harbour House Favourites",
+    "description": "Our signature dishes representing the heart of the Harbour House experience.",
+    "items": [
+      {
+        "id": "item-burger",
+        "name": "HH 6oz Burger",
+        "price": 18.0,
+        "description": "Prime beef patty, crispy pancetta, fresh lettuce, sliced beef tomato, house onion relish, served with seasoned chips, crispy onion rings, and homemade slaw.",
+        "markers": [
+          "Signature"
+        ],
+        "allergens": [
+          "Gluten",
+          "Milk",
+          "Egg",
+          "Mustard"
+        ]
+      },
+      {
+        "id": "item-sirloin",
+        "name": "HH 10oz Sirloin",
+        "price": 30.0,
+        "description": "Premium 10oz aged sirloin steak cooked to your liking, signature HH jus sauce, crispy onion rings, chunky chips, and a dressed garden side salad.",
+        "markers": [
+          "Premium Choice"
+        ],
+        "allergens": [
+          "Gluten",
+          "Sulphites",
+          "Mustard"
+        ]
+      },
+      {
+        "id": "item-skewer",
+        "name": "Malaysian Chicken Skewer",
+        "price": 18.0,
+        "description": "Marinated chicken thigh skewers in aromatic coconut, ginger, and lemongrass spices. Served with a crisp side salad and warm flatbread.",
+        "markers": [
+          "Spicy Accent"
+        ],
+        "allergens": [
+          "Gluten",
+          "Soya"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "From the Water",
+    "description": "Fresh seafood landed locally and prepared by our kitchen team.",
+    "items": [
+      {
+        "id": "item-fish-chips",
+        "name": "Fish & Chips",
+        "price": 20.0,
+        "description": "Traditional battered local cod, double-cooked chunky chips, garden peas, fresh lemon wedge, and house tartare sauce.",
+        "markers": [
+          "Local Catch",
+          "Classic"
+        ],
+        "allergens": [
+          "Gluten",
+          "Fish",
+          "Egg"
+        ]
+      },
+      {
+        "id": "item-moules",
+        "name": "Moules marinière",
+        "price": 22.0,
+        "description": "Fresh Isle of Wight mussels steamed in a classic creamy white wine, garlic, and parsley broth. Served with toasted rustic sourdough bread.",
+        "markers": [
+          "Local Catch",
+          "Staff Choice"
+        ],
+        "allergens": [
+          "Molluscs",
+          "Milk",
+          "Gluten",
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-curry-mussels",
+        "name": "Curry Mussels",
+        "price": 24.0,
+        "description": "Isle of Wight mussels steamed in a warm coconut curry, red chilli, and fresh coriander broth. Served with seasoned skin-on chips.",
+        "markers": [
+          "Spicy",
+          "Coastal Fusion"
+        ],
+        "allergens": [
+          "Molluscs",
+          "Fish",
+          "Soya"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Alongside",
+    "description": "Perfect accompaniments to complement your main dishes.",
+    "items": [
+      {
+        "id": "item-side-chips",
+        "name": "Chips",
+        "price": 4.5,
+        "description": "Double-cooked rustic chips seasoned with sea salt flakes.",
+        "markers": [
+          "Vegetarian",
+          "Vegan"
+        ],
+        "allergens": []
+      },
+      {
+        "id": "item-side-slaw",
+        "name": "Slaw",
+        "price": 4.5,
+        "description": "Freshly shredded red and white cabbage, carrots, bound in seasoned mayonnaise.",
+        "markers": [
+          "Vegetarian"
+        ],
+        "allergens": [
+          "Egg"
+        ]
+      },
+      {
+        "id": "item-side-salad",
+        "name": "Salad Bowl",
+        "price": 4.0,
+        "description": "Crisp mixed garden greens, cherry tomatoes, cucumber, house vinaigrette.",
+        "markers": [
+          "Vegetarian",
+          "Vegan"
+        ],
+        "allergens": [
+          "Mustard"
+        ]
+      },
+      {
+        "id": "item-side-sourdough",
+        "name": "Sourdough",
+        "price": 4.0,
+        "description": "Toasted local bakery sourdough bread served with soft salted butter.",
+        "markers": [
+          "Vegetarian"
+        ],
+        "allergens": [
+          "Gluten",
+          "Milk"
+        ]
+      },
+      {
+        "id": "item-side-rings",
+        "name": "Onion Rings",
+        "price": 4.5,
+        "description": "Giant beer-battered onion rings fried until golden and crispy.",
+        "markers": [
+          "Vegetarian"
+        ],
+        "allergens": [
+          "Gluten"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Little Sailors",
+    "description": "Smaller portions designed for children under 12.",
+    "items": [
+      {
+        "id": "item-kids-fish",
+        "name": "Kids Fish & Chips",
+        "price": 9.0,
+        "description": "Mini battered cod fillet, chips, and choice of garden peas or baked beans.",
+        "markers": [
+          "Kids Favourite"
+        ],
+        "allergens": [
+          "Gluten",
+          "Fish"
+        ]
+      },
+      {
+        "id": "item-kids-burger",
+        "name": "Kids Cheese Burger & Chips",
+        "price": 8.0,
+        "description": "4oz beef patty, melted cheddar cheese in a soft bun, served with chips.",
+        "markers": [],
+        "allergens": [
+          "Gluten",
+          "Milk"
+        ]
+      },
+      {
+        "id": "item-kids-nuggets",
+        "name": "Kids Chicken Nuggets & Chips",
+        "price": 7.0,
+        "description": "Crispy golden battered chicken breast chunks, served with chips and beans.",
+        "markers": [],
+        "allergens": [
+          "Gluten"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Cocktails & Mocktails",
+    "description": "Hand-crafted seaside cocktails (£10) and refreshing mocktails (£6).",
+    "items": [
+      {
+        "id": "item-cocktail-pornstar",
+        "name": "Pornstar Martini",
+        "price": "£10.00",
+        "description": "Vanilla vodka, passionfruit liqueur, fresh passionfruit juice, pineapple juice. Served with a shot of Prosecco.",
+        "markers": [
+          "Customer Favourite",
+          "Signature"
+        ],
+        "allergens": [
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-cocktail-espresso",
+        "name": "Espresso Martini",
+        "price": "£10.00",
+        "description": "Vanilla vodka, Kahlúa coffee liqueur, double shot of fresh espresso, sugar syrup.",
+        "markers": [
+          "Signature"
+        ],
+        "allergens": []
+      },
+      {
+        "id": "item-cocktail-spicy-marg",
+        "name": "Spicy Margarita",
+        "price": "£10.00",
+        "description": "Premium tequila, triple-sec, fresh red chilli slices, lime juice, salted rim.",
+        "markers": [
+          "Spicy",
+          "Staff Pick"
+        ],
+        "allergens": []
+      },
+      {
+        "id": "item-cocktail-mojito",
+        "name": "Sunset Mojito",
+        "price": "£10.00 / £6.00",
+        "description": "White rum, muddled lime, fresh garden mint, sugar syrup, soda. Available as Mocktail. Flavours: Strawberry, Passionfruit, Mango, Raspberry.",
+        "markers": [
+          "Sunset Classic"
+        ],
+        "allergens": []
+      },
+      {
+        "id": "item-cocktail-pina-colada",
+        "name": "Piña Colada",
+        "price": "£10.00 / £6.00",
+        "description": "White rum, Malibu coconut rum, pineapple juice, coconut cream, fresh cream. Available as Mocktail.",
+        "markers": [
+          "Creamy"
+        ],
+        "allergens": [
+          "Milk"
+        ]
+      },
+      {
+        "id": "item-cocktail-hugo",
+        "name": "Hugo Spritz",
+        "price": "£10.00",
+        "description": "Gin, elderflower liqueur, Prosecco, fresh mint leaves, soda.",
+        "markers": [
+          "Light & Floral"
+        ],
+        "allergens": [
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-cocktail-aperol",
+        "name": "Aperol Spritz",
+        "price": "£10.00",
+        "description": "Classic Italian Aperol, sparkling Prosecco, splash of soda, orange slice.",
+        "markers": [
+          "Aperitif"
+        ],
+        "allergens": [
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-cocktail-amaretto-sour",
+        "name": "Amaretto Sour",
+        "price": "£10.00 / £6.00",
+        "description": "Disaronno Amaretto, fresh lemon juice, egg white, angostura bitters. Available as Mocktail.",
+        "markers": [],
+        "allergens": [
+          "Egg"
+        ]
+      },
+      {
+        "id": "item-cocktail-mermaid",
+        "name": "The Mermaid",
+        "price": "£10.00",
+        "description": "Vanilla vodka, triple-sec, fresh lime juice, cranberry juice.",
+        "markers": [
+          "Local Theme"
+        ],
+        "allergens": []
+      }
+    ]
+  },
+  {
+    "category": "Beers & Ciders",
+    "description": "Selection of ice-cold draught beers and premium bottled ciders.",
+    "items": [
+      {
+        "id": "item-beer-madri",
+        "name": "Madrí Exceptional (Draught)",
+        "price": "£6.00",
+        "description": "Crisp, clean Spanish lager, light golden color with a light floral aroma (4.6% ABV).",
+        "markers": [
+          "Pouring Premium"
+        ],
+        "allergens": [
+          "Gluten"
+        ]
+      },
+      {
+        "id": "item-beer-cruzcampo",
+        "name": "Cruzcampo (Draught)",
+        "price": "£6.00",
+        "description": "Traditional Andalusian lager, light and refreshing with a smooth finish (4.4% ABV).",
+        "markers": [
+          "Pouring Premium"
+        ],
+        "allergens": [
+          "Gluten"
+        ]
+      },
+      {
+        "id": "item-beer-apocalypse",
+        "name": "Alpacalypse IPA (Draught)",
+        "price": "£6.00",
+        "description": "Locally brewed punchy craft IPA, loaded with tropical citrus hops (6.3% ABV).",
+        "markers": [
+          "Local Brewery",
+          "Chef Recommendation"
+        ],
+        "allergens": [
+          "Gluten"
+        ]
+      },
+      {
+        "id": "item-beer-cold-river",
+        "name": "Sharp's Cold River Cider (Draught)",
+        "price": "£6.00",
+        "description": "Crisp and clean Somerset apple cider with a refreshing dry finish (4.5% ABV).",
+        "markers": [
+          "Refreshing"
+        ],
+        "allergens": [
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-beer-corona",
+        "name": "Corona Extra (Bottle)",
+        "price": "£4.50",
+        "description": "Classic Mexican lager served with a wedge of fresh lime (4.5% ABV).",
+        "markers": [],
+        "allergens": [
+          "Gluten"
+        ]
+      },
+      {
+        "id": "item-beer-old-mout",
+        "name": "Old Mout Cider (Bottle)",
+        "price": "£6.00",
+        "description": "Premium kiwi and lime flavoured fruit cider (4% ABV).",
+        "markers": [],
+        "allergens": [
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-beer-estrella-zero",
+        "name": "Estrella Galicia 0.0% (Bottle)",
+        "price": "£4.00",
+        "description": "Delicious non-alcoholic Spanish lager with full pilsner flavor.",
+        "markers": [
+          "Alcohol Free"
+        ],
+        "allergens": [
+          "Gluten"
+        ]
+      },
+      {
+        "id": "item-beer-guinness-zero",
+        "name": "Guinness 0.0% (Bottle)",
+        "price": "£5.00",
+        "description": "Non-alcoholic stout, dark ruby color with a creamy white head.",
+        "markers": [
+          "Alcohol Free"
+        ],
+        "allergens": [
+          "Gluten"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Wine & Champagne",
+    "description": "Curated wine list available by the glass (175ml/250ml) or bottle.",
+    "items": [
+      {
+        "id": "item-wine-picpoul",
+        "name": "Ormarine, Picpoul de Pinet (France)",
+        "price": "£9.00 / £13.00 / £33.00",
+        "description": "Zesty, dry white wine with lemon peel and mineral notes. Perfect with seafood (12.5% ABV).",
+        "markers": [
+          "Seafood Match",
+          "Staff Choice"
+        ],
+        "allergens": [
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-wine-sauv-nz",
+        "name": "Seven Degrees, Sauvignon Blanc (NZ)",
+        "price": "£8.50 / £11.50 / £30.00",
+        "description": "Classic Marlborough Sauvignon Blanc with gooseberry and elderflower punch (12.5% ABV).",
+        "markers": [
+          "Premium Pick"
+        ],
+        "allergens": [
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-wine-sauv-sa",
+        "name": "Brightwater Bay, Sauvignon Blanc (S.A)",
+        "price": "£7.50 / £9.00 / £24.00",
+        "description": "Crisp and fresh with grass and tropical fruit undertones (12.5% ABV).",
+        "markers": [],
+        "allergens": [
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-wine-pinot-grigio",
+        "name": "Amori, Pinot Grigio (Italy)",
+        "price": "£7.50 / £9.00 / £24.00",
+        "description": "Light, dry, and easy drinking white wine with clean apple flavors (11% ABV).",
+        "markers": [],
+        "allergens": [
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-wine-blush",
+        "name": "Amori Pinot Grigio Blush (Italy)",
+        "price": "£7.50 / £9.00 / £24.00",
+        "description": "Fruity and elegant rosé wine with strawberry and cherry accents (11% ABV).",
+        "markers": [
+          "Summer Vibe"
+        ],
+        "allergens": [
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-wine-angel",
+        "name": "Whispering Angel, Cotes de Provence (France)",
+        "price": "£12.00 / £16.00 / £42.00",
+        "description": "World-class, dry and pale rosé with delicate red fruit and mineral notes (13% ABV).",
+        "markers": [
+          "Premium Pick",
+          "Sunset Favourite"
+        ],
+        "allergens": [
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-wine-mirabeau",
+        "name": "Maison Mirabeau Azure, Provence (France)",
+        "price": "£12.50 / £16.50 / £44.00",
+        "description": "Stunningly fresh, aromatic and dry Provence rosé, ideal for sunset sipping (13% ABV).",
+        "markers": [
+          "Premium Pick"
+        ],
+        "allergens": [
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-wine-malbec",
+        "name": "33 South, Malbec (Argentina)",
+        "price": "£7.50 / £9.00 / £24.00",
+        "description": "Rich, full-bodied red wine with dark plum, spice, and smooth oak (13.5% ABV).",
+        "markers": [
+          "Steak Match"
+        ],
+        "allergens": [
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-wine-merlot",
+        "name": "Ladera Verde, Merlot (Chile)",
+        "price": "£7.50 / £9.00 / £24.00",
+        "description": "Smooth, medium-bodied red wine with soft plum and berry flavours (12.5% ABV).",
+        "markers": [],
+        "allergens": [
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-wine-rioja",
+        "name": "Rioja Crianza, Rioja (Spain)",
+        "price": "£8.00 / £9.50 / £28.00",
+        "description": "Beautiful Spanish red, vanilla and toasted oak notes, smooth finish (13.5% ABV).",
+        "markers": [],
+        "allergens": [
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-wine-prosecco",
+        "name": "Amori Prosecco Spumante (Italy)",
+        "price": "£7.50 / £24.00",
+        "description": "Crisp sparkling wine with fine bubbles and fresh apple aromas (11% ABV).",
+        "markers": [
+          "Sparkling"
+        ],
+        "allergens": [
+          "Sulphites"
+        ]
+      },
+      {
+        "id": "item-wine-moet",
+        "name": "Moët & Chandon Brut Champagne (France)",
+        "price": "£99.00",
+        "description": "Distinguished, elegant, and dry French champagne for celebrations (12% ABV).",
+        "markers": [
+          "Premium Luxury",
+          "Sparkling"
+        ],
+        "allergens": [
+          "Sulphites"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Softs & Spirits",
+    "description": "Selection of spirits and soft drinks available at the bar.",
+    "items": [
+      {
+        "id": "item-softs-generic",
+        "name": "Soft Drinks Selection",
+        "price": "Ask at bar",
+        "description": "Selection of soft and hot drinks available, including Coca-Cola, juices, tonic water, teas, and coffees.",
+        "markers": [],
+        "allergens": []
+      },
+      {
+        "id": "item-spirits-generic",
+        "name": "Spirits Selection",
+        "price": "Ask at bar",
+        "description": "Premium selection of gins, rums, vodkas, whiskeys, and liqueurs available at the bar.",
+        "markers": [],
+        "allergens": []
+      }
+    ]
+  }
+]

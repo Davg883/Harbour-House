@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="100%" height="100%">
+  <defs>
+    <!-- Style settings -->
+    <style>
+      .bg-fill { fill: none; }
+      .navy-line { stroke: #0E1A2B; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .gold-accent { stroke: #C9A35A; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .solid-navy { fill: #0E1A2B; }
+      .solid-gold { fill: #C9A35A; }
+      .banner-bg { fill: #F5F1E8; stroke: #0E1A2B; stroke-width: 2; }
+      .logo-text { font-family: 'Playfair Display', Georgia, serif; font-size: 10px; font-weight: bold; fill: #0E1A2B; letter-spacing: 1.5px; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Transparent Background -->
+  <rect width="100%" height="100%" class="bg-fill" />
+
+  <!-- Quay Wall / Ground Line -->
+  <line x1="50" y1="280" x2="750" y2="280" class="navy-line" style="stroke-width: 3;" />
+  <line x1="50" y1="288" x2="750" y2="288" class="gold-accent" style="stroke-width: 1;" />
+
+  <!-- Main Central Building Structure -->
+  <!-- Main Walls -->
+  <rect x="280" y="180" width="240" height="100" class="navy-line" />
+  <!-- Clapboard Horizontal Lines (Siding) -->
+  <line x1="280" y1="195" x2="520" y2="195" class="navy-line" style="stroke-width: 1; opacity: 0.4;" />
+  <line x1="280" y1="210" x2="520" y2="210" class="navy-line" style="stroke-width: 1; opacity: 0.4;" />
+  <line x1="280" y1="225" x2="520" y2="225" class="navy-line" style="stroke-width: 1; opacity: 0.4;" />
+  <line x1="280" y1="240" x2="520" y2="240" class="navy-line" style="stroke-width: 1; opacity: 0.4;" />
+  <line x1="280" y1="255" x2="520" y2="255" class="navy-line" style="stroke-width: 1; opacity: 0.4;" />
+  <line x1="280" y1="270" x2="520" y2="270" class="navy-line" style="stroke-width: 1; opacity: 0.4;" />
+
+  <!-- Central Double Doors / Entrance -->
+  <rect x="370" y="210" width="60" height="70" class="navy-line" style="stroke-width: 1.5;" />
+  <line x1="400" y1="210" x2="400" y2="280" class="navy-line" style="stroke-width: 1;" />
+  <!-- Door Panes -->
+  <rect x="377" y="217" width="18" height="20" class="navy-line" style="stroke-width: 0.8;" />
+  <rect x="377" y="242" width="18" height="30" class="navy-line" style="stroke-width: 0.8;" />
+  <rect x="405" y="217" width="18" height="20" class="navy-line" style="stroke-width: 0.8;" />
+  <rect x="405" y="242" width="18" height="30" class="navy-line" style="stroke-width: 0.8;" />
+
+  <!-- Main Gable Roof -->
+  <!-- Outer Triangle -->
+  <polygon points="270,180 400,90 530,180" class="navy-line" style="stroke-width: 3;" />
+  <!-- Inner roof trim -->
+  <polygon points="278,180 400,98 522,180" class="gold-accent" />
+  
+  <!-- Gable Window (Half-circle/Arch) -->
+  <path d="M 380,140 A 20,20 0 0,1 420,140 Z" class="navy-line" />
+  <line x1="400" y1="120" x2="400" y2="140" class="navy-line" style="stroke-width: 1;" />
+  <line x1="380" y1="140" x2="420" y2="140" class="navy-line" style="stroke-width: 1.5;" />
+
+  <!-- Central Gable Cupola / Apex Ornament -->
+  <line x1="400" y1="90" x2="400" y2="60" class="navy-line" style="stroke-width: 2.5;" />
+  <polygon points="395,60 400,50 405,60" class="solid-navy" />
+  <circle cx="400" cy="70" r="3" class="solid-gold" />
+
+  <!-- Fascia Banner on Gable -->
+  <rect x="320" y="155" width="160" height="18" rx="2" class="banner-bg" />
+  <text x="400" y="167" class="logo-text">HARBOUR HOUSE</text>
+
+  <!-- Left Side Extension (Canopy/Veranda) -->
+  <!-- Columns -->
+  <line x1="100" y1="205" x2="100" y2="280" class="navy-line" style="stroke-width: 2.5;" />
+  <line x1="160" y1="198" x2="160" y2="280" class="navy-line" style="stroke-width: 1.5;" />
+  <line x1="220" y1="190" x2="220" y2="280" class="navy-line" style="stroke-width: 1.5;" />
+  <!-- Veranda Roof Sloped -->
+  <line x1="90" y1="205" x2="280" y2="180" class="navy-line" style="stroke-width: 3;" />
+  <line x1="92" y1="210" x2="278" y2="185" class="gold-accent" style="stroke-width: 1.5;" />
+  <!-- Balustrade/Railing Left -->
+  <line x1="100" y1="240" x2="280" y2="240" class="navy-line" />
+  <line x1="100" y1="245" x2="280" y2="245" class="gold-accent" />
+  <!-- Spindles Left -->
+  <line x1="120" y1="245" x2="120" y2="280" class="navy-line" style="stroke-width: 0.8; opacity: 0.6;" />
+  <line x1="140" y1="245" x2="140" y2="280" class="navy-line" style="stroke-width: 0.8; opacity: 0.6;" />
+  <line x1="180" y1="245" x2="180" y2="280" class="navy-line" style="stroke-width: 0.8; opacity: 0.6;" />
+  <line x1="200" y1="245" x2="200" y2="280" class="navy-line" style="stroke-width: 0.8; opacity: 0.6;" />
+  <line x1="240" y1="245" x2="240" y2="280" class="navy-line" style="stroke-width: 0.8; opacity: 0.6;" />
+  <line x1="260" y1="245" x2="260" y2="280" class="navy-line" style="stroke-width: 0.8; opacity: 0.6;" />
+
+  <!-- Right Side Extension (Canopy/Veranda) -->
+  <!-- Columns -->
+  <line x1="700" y1="205" x2="700" y2="280" class="navy-line" style="stroke-width: 2.5;" />
+  <line x1="640" y1="198" x2="640" y2="280" class="navy-line" style="stroke-width: 1.5;" />
+  <line x1="580" y1="190" x2="580" y2="280" class="navy-line" style="stroke-width: 1.5;" />
+  <!-- Veranda Roof Sloped -->
+  <line x1="520" y1="180" x2="710" y2="205" class="navy-line" style="stroke-width: 3;" />
+  <line x1="522" y1="185" x2="708" y2="210" class="gold-accent" style="stroke-width: 1.5;" />
+  <!-- Balustrade/Railing Right -->
+  <line x1="520" y1="240" x2="700" y2="240" class="navy-line" />
+  <line x1="520" y1="245" x2="700" y2="245" class="gold-accent" />
+  <!-- Spindles Right -->
+  <line x1="540" y1="245" x2="540" y2="280" class="navy-line" style="stroke-width: 0.8; opacity: 0.6;" />
+  <line x1="560" y1="245" x2="560" y2="280" class="navy-line" style="stroke-width: 0.8; opacity: 0.6;" />
+  <line x1="600" y1="245" x2="600" y2="280" class="navy-line" style="stroke-width: 0.8; opacity: 0.6;" />
+  <line x1="620" y1="245" x2="620" y2="280" class="navy-line" style="stroke-width: 0.8; opacity: 0.6;" />
+  <line x1="660" y1="245" x2="660" y2="280" class="navy-line" style="stroke-width: 0.8; opacity: 0.6;" />
+  <line x1="680" y1="245" x2="680" y2="280" class="navy-line" style="stroke-width: 0.8; opacity: 0.6;" />
+
+  <!-- Flagpoles -->
+  <!-- Left Flagpole -->
+  <line x1="100" y1="205" x2="100" y2="80" class="navy-line" style="stroke-width: 2;" />
+  <circle cx="100" cy="80" r="2.5" class="solid-navy" />
+  <!-- Wavy Flag Left (flows left) -->
+  <path d="M 100,85 C 85,80 85,95 70,90 L 70,110 C 85,115 85,100 100,105 Z" fill="#F5F1E8" stroke="#0E1A2B" stroke-width="1.5" />
+  <path d="M 85,91 L 85,108" class="gold-accent" style="stroke-width: 0.8;" />
+
+  <!-- Right Flagpole -->
+  <line x1="700" y1="205" x2="700" y2="80" class="navy-line" style="stroke-width: 2;" />
+  <circle cx="700" cy="80" r="2.5" class="solid-navy" />
+  <!-- Wavy Flag Right (flows right) -->
+  <path d="M 700,85 C 715,80 715,95 730,90 L 730,110 C 715,115 715,100 700,105 Z" fill="#F5F1E8" stroke="#0E1A2B" stroke-width="1.5" />
+  <path d="M 715,91 L 715,108" class="gold-accent" style="stroke-width: 0.8;" />
+
+  <!-- Front Deck Railings (runs across the foreground) -->
+  <line x1="50" y1="250" x2="750" y2="250" class="navy-line" style="stroke-width: 2;" />
+  <!-- Repeating Spindles for foreground railing -->
+  <line x1="60" y1="250" x2="60" y2="280" class="navy-line" style="stroke-width: 1.2;" />
+  <line x1="80" y1="250" x2="80" y2="280" class="navy-line" style="stroke-width: 1.2;" />
+  <line x1="140" y1="250" x2="140" y2="280" class="navy-line" style="stroke-width: 1.2;" />
+  <line x1="300" y1="250" x2="300" y2="280" class="navy-line" style="stroke-width: 1.2;" />
+  <line x1="320" y1="250" x2="320" y2="280" class="navy-line" style="stroke-width: 1.2;" />
+  <line x1="340" y1="250" x2="340" y2="280" class="navy-line" style="stroke-width: 1.2;" />
+  <line x1="460" y1="250" x2="460" y2="280" class="navy-line" style="stroke-width: 1.2;" />
+  <line x1="480" y1="250" x2="480" y2="280" class="navy-line" style="stroke-width: 1.2;" />
+  <line x1="500" y1="250" x2="500" y2="280" class="navy-line" style="stroke-width: 1.2;" />
+  <line x1="660" y1="250" x2="660" y2="280" class="navy-line" style="stroke-width: 1.2;" />
+  <line x1="720" y1="250" x2="720" y2="280" class="navy-line" style="stroke-width: 1.2;" />
+  <line x1="740" y1="250" x2="740" y2="280" class="navy-line" style="stroke-width: 1.2;" />
+
+</svg>

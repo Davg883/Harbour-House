@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Harbour House Brand Showcase - An interactive digital showroom, style guide, and social media studio for Harbour House, Ryde Marina.">
+  <title>Harbour House Brand Showcase &amp; Governance Tool</title>
+  
+  <!-- Preconnecting Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="brand-showcase-app">
+
+  <!-- Local Server Notification Banner (CORS file:// warning) -->
+  <div id="file-mode-banner" role="alert" aria-live="polite">
+    <strong>Basic viewing mode:</strong> Start the local server to enable image manifests, enhanced clipboard tools, and all interactive features. 
+    <code>python -m http.server 8000</code>
+  </div>
+
+  <!-- Glassmorphic Navigation Header -->
+  <header role="banner">
+    <div class="nav-container">
+      <a href="#brand-showcase-app" class="nav-logo" aria-label="Harbour House Brand Showcase Home">
+        <!-- Monogram SVG inline -->
+        <svg viewBox="0 0 100 100" aria-hidden="true" width="40" height="40">
+          <circle cx="50" cy="50" r="44" stroke="#0E1A2B" stroke-width="2" fill="none" />
+          <circle cx="50" cy="50" r="40" stroke="#C9A35A" stroke-width="1" fill="none" />
+          <text x="50" y="62" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="38" fill="#0E1A2B">HH</text>
+        </svg>
+        <span>HARBOUR HOUSE</span>
+      </a>
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links" id="menu-nav-links">
+          <li><a href="#experience" class="active">Experience</a></li>
+          <li><a href="#place">Place</a></li>
+          <li><a href="#visuals">Visuals</a></li>
+          <li><a href="#culinary">Culinary</a></li>
+          <li><a href="#sundown">Sundown</a></li>
+          <li><a href="#group">Group</a></li>
+          <li><a href="#studio">Studio</a></li>
+          <li><a href="#gallery">Library</a></li>
+          <li><a href="#governance">Quality</a></li>
+        </ul>
+      </nav>
+      <!-- Quick Accessibility Toolbar -->
+      <div style="display: flex; gap: 8px;">
+        <button id="quick-contrast-toggle" class="btn btn-secondary" style="padding: 4px 10px; min-height: 36px; font-size: 0.7rem;" aria-label="Toggle High Contrast Mode">Contrast</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main role="main">
+
+    <!-- SECTION 1: The Harbour House Experience -->
+    <section id="experience" aria-labelledby="experience-title" class="hero">
+      <div class="hero-bg-overlay"></div>
+      <img src="assets/images/concepts/venue/venue_sunset_view.png" class="hero-bg-img" alt="Yachts moored at Ryde Marina during an orange sunset" id="hero-background-image">
+      
+      <div class="hero-content">
+        <div class="hero-logo-box">
+          <img src="assets/brand/logo-badge.svg" alt="Harbour House circular badge logo logo-badge.svg" id="hero-badge-logo">
+        </div>
+        <h1 id="experience-title">HARBOUR HOUSE</h1>
+        <p class="hero-location">Ryde Marina, Isle of Wight</p>
+        <p class="hero-proposition">Food. Drinks. Sunsets. Marina views.</p>
+        <a href="#place" class="btn btn-gold" id="btn-hero-cta">Explore Brand Showroom</a>
+        
+        <!-- Five Brand Pillars -->
+        <div class="pillars-container" aria-label="Five core brand attributes">
+          <span class="pillar-badge">Coastal</span>
+          <span class="pillar-badge">Sociable</span>
+          <span class="pillar-badge">Premium</span>
+          <span class="pillar-badge">Relaxed</span>
+          <span class="pillar-badge">Local</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: A Brand Rooted in Place -->
+    <section id="place" class="container" aria-labelledby="place-title">
+      <h2 id="place-title">A Brand Rooted in Place</h2>
+      <div class="grid-2">
+        <div>
+          <p>
+            Harbour House is not just a venue; it is an extension of the Ryde Marina waterfront itself. The brand's identity is anchored in its physical location—perched directly on the harbour wall, with views spanning boats, masts, open Solent skies, and the daily sunset.
+          </p>
+          <p>
+            This section serves to align staff and external agencies on our three core brand assets:
+          </p>
+          <ul style="margin-left: 20px; margin-bottom: 20px; list-style: circle;">
+            <li><strong>Front Elevation:</strong> The iconic clapboard facade and triangular gables representing the building's structural footprint.</li>
+            <li><strong>Harbour-Facing Location:</strong> Framing the venue against boats, marina walls, and water.</li>
+            <li><strong>Guest Viewpoint:</strong> Promoting photography taken from bar-side tables looking out, placing the guest directly in the experience.</li>
+          </ul>
+        </div>
+        
+        <!-- Architectural Assets Toggle -->
+        <div class="architecture-showcase" id="architecture-panel">
+          <h3>Architectural Assets</h3>
+          <p style="font-size: 0.85rem; text-align: center; color: var(--dark-gray); margin-bottom: var(--space-md);">
+            Explore our controlled SVG vector line art assets. Click below to inspect each configuration.
+          </p>
+          <div class="svg-display-box" id="logo-preview-box">
+            <!-- Renders SVG via JS -->
+            <img src="assets/brand/logo-primary.svg" id="selected-logo-img" alt="Selected branding logo" style="max-height: 200px; margin: 0 auto; display: block;">
+          </div>
+          
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; width: 100%;">
+            <button class="btn btn-secondary logo-toggle-btn active" data-logo="logo-primary" style="padding: 4px 10px; font-size: 0.75rem; min-height: 38px;">Primary Logo</button>
+            <button class="btn btn-secondary logo-toggle-btn" data-logo="logo-badge" style="padding: 4px 10px; font-size: 0.75rem; min-height: 38px;">Badge Seal</button>
+            <button class="btn btn-secondary logo-toggle-btn" data-logo="logo-monogram" style="padding: 4px 10px; font-size: 0.75rem; min-height: 38px;">Monogram</button>
+            <button class="btn btn-secondary logo-toggle-btn" data-logo="building-elevation" style="padding: 4px 10px; font-size: 0.75rem; min-height: 38px;">Elevation Drawing</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Physical Menu Photography Gallery -->
+      <div style="margin-top: var(--space-xxl);">
+        <h3>Physical Brand Reference: Menus</h3>
+        <p style="margin-bottom: var(--space-md);">
+          Real-life printed menu cards represent our physical brand collateral. These photographs document the organic, hand-drawn animal illustrations and layout rules.
+        </p>
+        <div class="place-photo-row">
+          <div class="place-card">
+            <img src="assets/images/reference/menus/menu_cover.jpg" alt="Harbour House Menu Cover photography" class="zoomable-image" data-id="ref-menu-cover">
+            <div class="place-card-content">
+              <div class="place-card-title">Menu Front Cover</div>
+              <span class="item-marker-badge" style="background-color: var(--navy); color: var(--sand); border: 1px solid var(--sand);">Reference</span>
+            </div>
+          </div>
+          <div class="place-card">
+            <img src="assets/images/reference/menus/menu_mains.jpg" alt="Harbour House Food Menu photography" class="zoomable-image" data-id="ref-menu-mains">
+            <div class="place-card-content">
+              <div class="place-card-title">Mains &amp; Tapas Page</div>
+              <span class="item-marker-badge" style="background-color: var(--navy); color: var(--sand); border: 1px solid var(--sand);">Reference</span>
+            </div>
+          </div>
+          <div class="place-card">
+            <img src="assets/images/reference/menus/menu_cocktails.jpg" alt="Harbour House Cocktail Menu photography" class="zoomable-image" data-id="ref-menu-cocktails">
+            <div class="place-card-content">
+              <div class="place-card-title">Cocktails &amp; Mocktails Page</div>
+              <span class="item-marker-badge" style="background-color: var(--navy); color: var(--sand); border: 1px solid var(--sand);">Reference</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: The Visual System -->
+    <section id="visuals" class="container" aria-labelledby="visuals-title">
+      <h2 id="visuals-title">The Visual System</h2>
+      
+      <!-- Color Palette -->
+      <h3>Colour Palette</h3>
+      <p style="margin-bottom: var(--space-lg);">
+        Our colour system represents the sands, seas, and skies of the Isle of Wight. Click a card to copy its color values.
+      </p>
+      
+      <div class="color-swatch-grid" id="color-palette-container">
+        <!-- Palette swatches loaded by JS -->
+      </div>
+
+      <!-- Color Accessibility and Combination Auditor -->
+      <div class="contrast-demo-panel">
+        <h3>Brand Colour-Usage Audit</h3>
+        <p style="font-size: 0.9rem; margin-bottom: var(--space-md);">
+          Ensure readable contrast on all marketing and digital outputs. We maintain a strict **WCAG AA minimum (4.5:1 ratio)** for text.
+        </p>
+        <div style="overflow-x: auto;">
+          <table class="contrast-table">
+            <thead>
+              <tr>
+                <th>Background</th>
+                <th>Foreground Text</th>
+                <th>Sample Output</th>
+                <th>Contrast Ratio</th>
+                <th>Status</th>
+                <th>Guidelines</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Navy (<code>#0E1A2B</code>)</td>
+                <td>Ivory (<code>#F5F1E8</code>)</td>
+                <td><span class="contrast-cell" style="background-color: #0E1A2B; color: #F5F1E8;">Sample Text</span></td>
+                <td>12.8:1</td>
+                <td><span class="pass-badge">Pass</span></td>
+                <td>Primary combo. Excellent for titles and dark layout sections.</td>
+              </tr>
+              <tr>
+                <td>Navy (<code>#0E1A2B</code>)</td>
+                <td>Gold (<code>#C9A35A</code>)</td>
+                <td><span class="contrast-cell" style="background-color: #0E1A2B; color: #C9A35A;">Sample Text</span></td>
+                <td>4.9:1</td>
+                <td><span class="pass-badge">Pass</span></td>
+                <td>Approved for large accent text, icons, and buttons.</td>
+              </tr>
+              <tr>
+                <td>Navy (<code>#0E1A2B</code>)</td>
+                <td>Coral (<code>#E07A5F</code>)</td>
+                <td><span class="contrast-cell" style="background-color: #0E1A2B; color: #E07A5F;">Sample Text</span></td>
+                <td>3.1:1</td>
+                <td><span class="fail-badge">Fail</span></td>
+                <td><strong>Do not use</strong> for text. Only permitted as a border or solid graphical fill.</td>
+              </tr>
+              <tr>
+                <td>Ivory (<code>#F5F1E8</code>)</td>
+                <td>Navy (<code>#0E1A2B</code>)</td>
+                <td><span class="contrast-cell" style="background-color: #F5F1E8; color: #0E1A2B;">Sample Text</span></td>
+                <td>12.8:1</td>
+                <td><span class="pass-badge">Pass</span></td>
+                <td>Approved. Primary layout style for documents and body content.</td>
+              </tr>
+              <tr>
+                <td>Ivory (<code>#F5F1E8</code>)</td>
+                <td>Gold (<code>#C9A35A</code>)</td>
+                <td><span class="contrast-cell" style="background-color: #F5F1E8; color: #C9A35A;">Sample Text</span></td>
+                <td>2.6:1</td>
+                <td><span class="fail-badge">Fail</span></td>
+                <td><strong>Do not use.</strong> Insufficient contrast. Text becomes unreadable.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Typography Panel -->
+      <div class="typography-tester">
+        <h3>Typography System</h3>
+        <p style="margin-bottom: var(--space-md);">
+          Resilient stack fallback system. Fonts load from Google CDN, but immediately degrade gracefully to pre-approved system fonts if offline.
+        </p>
+        
+        <div class="font-demo-block">
+          <div class="font-demo-label">Display font (Headlines, titles) - Playfair Display</div>
+          <div class="font-demo-headline">Playfair Display: Beautiful Editorial Headlines</div>
+          <p style="font-size: 0.8rem; font-family: monospace; margin-top: 5px;">
+            font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+          </p>
+        </div>
+        
+        <div class="font-demo-block">
+          <div class="font-demo-label">Body Text (UI elements, descriptions) - Montserrat</div>
+          <div class="font-demo-body">Montserrat: Clean, modern, highly legible sans-serif for UI menus, pricing sheets, and text paragraphs.</div>
+          <p style="font-size: 0.8rem; font-family: monospace; margin-top: 5px;">
+            font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+          </p>
+        </div>
+        
+        <div class="font-demo-block">
+          <div class="font-demo-label">Script font (Short accents only) - Caveat</div>
+          <div class="font-demo-script">Caveat: Handcrafted coastal accents</div>
+          <p style="font-size: 0.8rem; font-family: monospace; margin-top: 5px;">
+            font-family: 'Caveat', 'Segoe Print', 'Bradley Hand', 'Brush Script MT', cursive;
+          </p>
+          <div style="background-color: rgba(224, 122, 95, 0.1); border-left: 3px solid var(--coral); padding: 10px; font-size: 0.8rem; margin-top: 10px;">
+            <strong>Rule:</strong> script font should only be used for short decorative word accents (e.g. "by the sea", "established 2024"). Important booking details or menus must remain in serif or sans-serif.
+          </div>
+        </div>
+      </div>
+
+      <!-- Iconography Display -->
+      <div style="margin-top: var(--space-xxl);">
+        <h3>Iconography</h3>
+        <p style="margin-bottom: var(--space-md);">
+          Simple vector lines reflecting maritime, beverage, and sunset themes.
+        </p>
+        <div class="grid-3" style="text-align: center;">
+          <div style="background: var(--white); padding: var(--space-lg); border-radius: var(--radius-md); border: 1px solid var(--light-gray);">
+            <!-- Sun icon -->
+            <svg viewBox="0 0 24 24" width="48" height="48" style="stroke: var(--gold); fill: none; stroke-width: 1.5; margin: 0 auto var(--space-sm);">
+              <circle cx="12" cy="12" r="5" fill="none" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <h4 style="font-family: var(--font-body); font-size: 1rem; margin-bottom: 5px;">Sun Symbol</h4>
+            <p style="font-size: 0.8rem; color: var(--dark-gray); margin-bottom: 0;">Used for Sundown Sessions branding and golden hour timing alerts.</p>
+          </div>
+          
+          <div style="background: var(--white); padding: var(--space-lg); border-radius: var(--radius-md); border: 1px solid var(--light-gray);">
+            <!-- Anchor icon -->
+            <svg viewBox="0 0 24 24" width="48" height="48" style="stroke: var(--navy); fill: none; stroke-width: 1.5; margin: 0 auto var(--space-sm);">
+              <circle cx="12" cy="5" r="2" fill="none" />
+              <line x1="12" y1="7" x2="12" y2="21" />
+              <line x1="8" y1="10" x2="16" y2="10" />
+              <path d="M 5,14 A 7,7 0 0,0 19,14" fill="none" />
+              <line x1="5" y1="14" x2="3" y2="12" />
+              <line x1="19" y1="14" x2="21" y2="12" />
+            </svg>
+            <h4 style="font-family: var(--font-body); font-size: 1rem; margin-bottom: 5px;">Anchor Icon</h4>
+            <p style="font-size: 0.8rem; color: var(--dark-gray); margin-bottom: 0;">Represents local heritage, marina safety, and location branding.</p>
+          </div>
+          
+          <div style="background: var(--white); padding: var(--space-lg); border-radius: var(--radius-md); border: 1px solid var(--light-gray);">
+            <!-- Cocktail icon -->
+            <svg viewBox="0 0 24 24" width="48" height="48" style="stroke: var(--coral); fill: none; stroke-width: 1.5; margin: 0 auto var(--space-sm);">
+              <line x1="2" y1="3" x2="22" y2="3" />
+              <line x1="12" y1="13" x2="12" y2="21" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <polygon points="2,3 12,13 22,3" fill="none" />
+              <circle cx="18" cy="7" r="1.5" style="fill: var(--coral);" />
+            </svg>
+            <h4 style="font-family: var(--font-body); font-size: 1rem; margin-bottom: 5px;">Beverage Symbol</h4>
+            <p style="font-size: 0.8rem; color: var(--dark-gray); margin-bottom: 0;">Used on drink guides, recipe cards, and bar notifications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Food, Drinks and Menus -->
+    <section id="culinary" class="container" aria-labelledby="culinary-title">
+      <h2 id="culinary-title">Food, Drinks &amp; Menus</h2>
+      <p style="margin-bottom: var(--space-lg);">
+        Our menu philosophy runs on an interactive flow: <strong>Discover &rarr; compare &rarr; pair &rarr; order</strong>. 
+        This is a design demonstration layout to preview menu item structure, pricing styling, and allergens.
+      </p>
+      
+      <div class="menu-explorer-layout">
+        <!-- Sidebar Navigation Tabs -->
+        <aside class="menu-tabs" id="menu-categories-tabs" role="tablist" aria-label="Menu categories">
+          <!-- Button tabs loaded by JS -->
+        </aside>
+        
+        <!-- Interactive Items Explorer -->
+        <div class="menu-items-panel" role="tabpanel" id="menu-items-display-panel" aria-live="polite">
+          <div class="menu-list" id="menu-items-list-container">
+            <!-- Loaded dynamically by JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Food-and-Drink Pairing Assistant -->
+      <div class="pairing-assistant-panel" id="pairing-assistant">
+        <h3>Interactive Food &amp; Drink Pairing Assistant</h3>
+        <p style="max-width: 600px; margin: 0 auto var(--space-lg); font-size: 0.95rem;">
+          Select a food dish to view the proposed recommended beverage pairing from our cellar or draught list.
+        </p>
+        
+        <div class="pairing-selector">
+          <select id="dish-pairing-select" aria-label="Select food dish to check pairing">
+            <option value="">-- Choose a dish --</option>
+            <!-- Loaded dynamically by JS -->
+          </select>
+        </div>
+        
+        <div class="pairing-result-box" id="pairing-results-container">
+          <span class="pairing-status-badge">Proposed Recommendation</span>
+          <div class="pairing-dish-title" id="pair-dish-name">Moules marinière</div>
+          <div style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 10px;">Recommended pairing:</div>
+          <div class="pairing-match" id="pair-beverage-name">Ormarine, Picpoul de Pinet (France)</div>
+          <p id="pair-beverage-desc" style="font-size: 0.95rem; margin-bottom: 0;">
+            The crisp acidity and mineral undertones of Picpoul cut through the creaminess of the white wine and garlic sauce.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Sundown Sessions -->
+    <section id="sundown" class="container" aria-labelledby="sundown-title">
+      <div class="sunset-header">
+        <h2 id="sundown-title">Sundown Sessions</h2>
+        <p style="max-width: 600px; margin: 0 auto; font-size: 1.1rem; font-style: italic;">
+          "The signature sub-brand program celebrating music, sunset cocktails, and evening waterfront styling."
+        </p>
+      </div>
+
+      <div class="sunset-grid">
+        <!-- Brand Constants vs Sundown Variables -->
+        <div class="sunset-card-box">
+          <h3>Sub-Brand Design Rules</h3>
+          <p style="font-size: 0.9rem; margin-bottom: var(--space-md); color: var(--dark-gray);">
+            Sundown Sessions represents a campaign variable built on top of our brand constants. Maintain this hierarchy strictly:
+          </p>
+          
+          <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+            <thead>
+              <tr style="border-bottom: 2px solid var(--sand);">
+                <th style="padding: 8px 4px; text-align: left;">Brand Constants (Rigid)</th>
+                <th style="padding: 8px 4px; text-align: left;">Sundown Variables (Flexible)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--light-gray);">
+                <td style="padding: 8px 4px;">Harbour House primary typography</td>
+                <td style="padding: 8px 4px;">Sunset orange/coral linear gradients</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--light-gray);">
+                <td style="padding: 8px 4px;">Ryde Marina location context</td>
+                <td style="padding: 8px 4px;">Acoustic and music-related iconography</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--light-gray);">
+                <td style="padding: 8px 4px;">Navy base background colour</td>
+                <td style="padding: 8px 4px;">Warm lighting effects &amp; artist photography</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Music Identity Guidelines -->
+        <div class="sunset-card-box">
+          <h3>Atmosphere &amp; Music Flow</h3>
+          <p style="font-size: 0.9rem; margin-bottom: var(--space-md); color: var(--dark-gray);">
+            Music is a cornerstone of the Sundown experience. Sound levels must follow the daily timeline to match guest moods:
+          </p>
+          
+          <div class="timeline-container">
+            <div class="timeline-node">
+              <div class="node-time">14:00 - 17:00 | Late Lunch</div>
+              <div class="node-title">Coastal Chill</div>
+              <div class="node-desc">Low, unobtrusive acoustic ambient and beachside tunes. Supports lunch talk.</div>
+            </div>
+            <div class="timeline-node">
+              <div class="node-time">17:00 - 20:00 | Golden Hour</div>
+              <div class="node-title">Sunset Chillout</div>
+              <div class="node-desc">Up-tempo acoustic covers, mellow grooves. Music rises slightly to mirror sunset energy.</div>
+            </div>
+            <div class="timeline-node">
+              <div class="node-time">20:00 - Close | Dinner &amp; Drinks</div>
+              <div class="node-title">Harbour Acoustic</div>
+              <div class="node-desc">Live local acoustic acts or curated vinyl playlists. Rich, warm sounds. Supports conversation.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Social and Group Experiences -->
+    <section id="group" class="container" aria-labelledby="group-title">
+      <h2 id="group-title">Social &amp; Group Experiences</h2>
+      
+      <div class="grid-2" style="margin-bottom: var(--space-xxl);">
+        <!-- Group Journey Simulator -->
+        <div class="group-journey-simulator" id="group-simulator-panel">
+          <h3>Interactive Group Journey Simulator</h3>
+          <p style="font-size: 0.85rem; color: var(--dark-gray); margin-bottom: var(--space-md);">
+            Simulate a customer booking enquiry step-by-step to generate a pre-formatted team sheet summary.
+          </p>
+          
+          <div class="journey-step-container">
+            <div class="journey-step" data-step="1">
+              <div style="font-weight: bold; margin-bottom: 5px;">Step 1: Choose the Occasion</div>
+              <div class="step-options-grid" id="occasion-options-container">
+                <!-- Loaded dynamically by JS -->
+              </div>
+            </div>
+
+            <div class="journey-step" data-step="2">
+              <div style="font-weight: bold; margin-bottom: 5px;">Step 2: Party Size &amp; Style</div>
+              <div class="step-options-grid" id="style-options-container">
+                <!-- Loaded dynamically by JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Summary Box -->
+          <div class="journey-summary-box">
+            <h4 style="font-family: var(--font-body); font-size: 0.9rem; margin-bottom: 5px; color: var(--gold);">Enquiry Summary output</h4>
+            <div class="journey-output-text" id="journey-summary-text">Select options above to generate summary...</div>
+            <button class="btn btn-gold" id="btn-copy-summary" style="min-height: 38px; padding: 4px 10px; font-size: 0.75rem;">Copy Summary</button>
+            <p style="font-size: 0.75rem; font-style: italic; color: #666; margin-top: 5px; margin-bottom: 0;">
+              * Note: This demonstration does not submit or confirm a booking.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pre-approved Occasion Copy Guidelines -->
+        <div>
+          <h3>Occasion Copy Guidelines</h3>
+          <p style="margin-bottom: var(--space-md);">
+            Ensure all marketing text, emails, and group responses align with the brand guidelines. Reference the comparison below:
+          </p>
+          
+          <div style="background-color: var(--white); border: 1px solid var(--light-gray); border-radius: var(--radius-md); padding: var(--space-md);">
+            <h4 style="font-family: var(--font-body); font-size: 0.95rem; margin-bottom: 5px; color: var(--success);">✔ Preferred (Premium &amp; Relaxed)</h4>
+            <p style="font-size: 0.85rem; font-style: italic; background-color: rgba(46,125,50,0.05); padding: 8px; border-radius: 4px; border-left: 3px solid var(--success); margin-bottom: var(--space-md);">
+              "Gather around the table on the harbour wall. We accommodate birthdays, team catch-ups, and socials with custom boards and sunset drinks packages."
+            </p>
+            
+            <h4 style="font-family: var(--font-body); font-size: 0.95rem; margin-bottom: 5px; color: var(--error);">✘ Avoid (Cheap &amp; Loud)</h4>
+            <p style="font-size: 0.85rem; font-style: italic; background-color: rgba(217,56,56,0.05); padding: 8px; border-radius: 4px; border-left: 3px solid var(--error); margin-bottom: var(--space-md);">
+              "BOOK YOUR WEDDING OR BIG PARTY HERE! We fit 100+ people. Cheap deals available! First come first served."
+            </p>
+            
+            <p style="font-size: 0.8rem; color: var(--dark-gray); margin-bottom: 0;">
+              <strong>Why:</strong> The preferred copy feels inclusive and descriptive, highlighting the setting. Avoid copy is aggressive, refers to weddings (which the venue does not host), and cheapens the brand identity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: Social Media Studio -->
+    <section id="studio" class="container" aria-labelledby="studio-title">
+      <h2 id="studio-title">Social Media Studio</h2>
+      <p style="margin-bottom: var(--space-lg);">
+        A hands-on, interactive social layout tool for staff and design agencies. Adjust aspect ratios, toggle safe guide overlays, and copy approved copy captions.
+      </p>
+
+      <div class="social-studio-grid">
+        <!-- Controls Sidebar -->
+        <aside class="social-studio-controls">
+          <div>
+            <label for="canvas-image-select" style="font-weight: bold; font-size: 0.85rem; display: block; margin-bottom: 4px;">1. Select Image Asset</label>
+            <select id="canvas-image-select" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid var(--light-gray); font-family: var(--font-body); margin-bottom: 6px;" aria-label="Select image for simulator">
+              <!-- JS loads images -->
+            </select>
+            <div style="display: flex; gap: 8px;">
+              <button class="btn btn-secondary" id="btn-studio-prev" style="flex: 1; min-height: 38px; font-size: 0.75rem; padding: 4px;" aria-label="Previous simulated image">Back</button>
+              <button class="btn btn-secondary" id="btn-studio-next" style="flex: 1; min-height: 38px; font-size: 0.75rem; padding: 4px;" aria-label="Next simulated image">Next</button>
+            </div>
+          </div>
+
+          <div>
+            <span style="font-weight: bold; font-size: 0.85rem; display: block; margin-bottom: 4px;">2. Aspect Ratio</span>
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <button class="btn btn-secondary canvas-ratio-btn active" data-ratio="square" style="min-height: 38px; font-size: 0.75rem; padding: 4px; justify-content: flex-start;">Instagram Square (1080 × 1080)</button>
+              <button class="btn btn-secondary canvas-ratio-btn" data-ratio="portrait" style="min-height: 38px; font-size: 0.75rem; padding: 4px; justify-content: flex-start;">Instagram Portrait (1080 × 1350)</button>
+              <button class="btn btn-secondary canvas-ratio-btn" data-ratio="story" style="min-height: 38px; font-size: 0.75rem; padding: 4px; justify-content: flex-start;">Story / Reel Cover (1080 × 1920)</button>
+              <button class="btn btn-secondary canvas-ratio-btn" data-ratio="facebook" style="min-height: 38px; font-size: 0.75rem; padding: 4px; justify-content: flex-start;">Facebook Event (1920 × 1005)</button>
+              <button class="btn btn-secondary canvas-ratio-btn" data-ratio="website" style="min-height: 38px; font-size: 0.75rem; padding: 4px; justify-content: flex-start;">Website Hero (1920 × 1080)</button>
+            </div>
+          </div>
+
+          <div>
+            <span style="font-weight: bold; font-size: 0.85rem; display: block; margin-bottom: 4px;">3. Safe Guide Overlays</span>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <label class="checklist-label" style="display: flex; align-items: center; gap: 8px;">
+                <input type="checkbox" id="toggle-guide-thirds" style="width: 18px; height: 18px;"> Grid of Thirds
+              </label>
+              <label class="checklist-label" style="display: flex; align-items: center; gap: 8px;">
+                <input type="checkbox" id="toggle-guide-horizon" style="width: 18px; height: 18px;"> Sunset Horizon Line
+              </label>
+              <label class="checklist-label" style="display: flex; align-items: center; gap: 8px;">
+                <input type="checkbox" id="toggle-guide-safe" style="width: 18px; height: 18px;"> Text Safe Margins
+              </label>
+              <label class="checklist-label" style="display: flex; align-items: center; gap: 8px;">
+                <input type="checkbox" id="toggle-guide-focal" style="width: 18px; height: 18px;"> Focal Point Crosshair
+              </label>
+            </div>
+          </div>
+          
+          <div>
+            <label for="caption-category-select" style="font-weight: bold; font-size: 0.85rem; display: block; margin-bottom: 4px;">4. Pre-approved Caption</label>
+            <select id="caption-category-select" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid var(--light-gray); font-family: var(--font-body); margin-bottom: var(--space-sm);" aria-label="Select caption template">
+              <!-- Loaded by JS -->
+            </select>
+            <div style="background-color: var(--ivory); padding: 8px; border-radius: 4px; border: 1px solid var(--light-gray); font-size: 0.8rem; max-height: 120px; overflow-y: auto;" id="selected-caption-box">
+              Caption text will load...
+            </div>
+            <button class="btn btn-gold" id="btn-copy-caption" style="width: 100%; min-height: 38px; font-size: 0.75rem; padding: 4px; margin-top: 6px;">Copy Caption</button>
+          </div>
+        </aside>
+
+        <!-- Interactive Canvas Preview -->
+        <div class="simulator-canvas-area" id="studio-simulator-container">
+          <div class="simulator-frame ratio-square" id="canvas-simulator-frame">
+            <!-- Simulated Image -->
+            <div class="frame-image-wrapper">
+              <img src="assets/images/concepts/social/social_find_us.png" id="canvas-simulated-img" class="frame-bg-img" alt="Simulated brand asset in canvas">
+              
+              <!-- Guideline Overlays -->
+              <div class="overlay-lines" id="canvas-overlay-wrapper">
+                <!-- Thirds -->
+                <div class="overlay-grid-3x3" id="guide-grid-element" style="display: none;">
+                  <div class="grid-box"></div><div class="grid-box"></div><div class="grid-box"></div>
+                  <div class="grid-box"></div><div class="grid-box"></div><div class="grid-box"></div>
+                  <div class="grid-box"></div><div class="grid-box"></div><div class="grid-box"></div>
+                </div>
+                <!-- Horizon -->
+                <div class="horizon-line" id="guide-horizon-element" style="display: none;">
+                  <span class="horizon-label">ALIGN SEA LEVEL HERE</span>
+                </div>
+                <!-- Safe margins -->
+                <div class="safe-zone" id="guide-safe-element" style="display: none;">
+                  <span class="safe-zone-label">SAFE TEXT BOUNDS</span>
+                </div>
+                <!-- Focal Point -->
+                <div class="focal-point" id="guide-focal-element" style="left: 50%; top: 50%; display: none;"></div>
+              </div>
+            </div>
+            
+            <!-- Simulated Footer branding on canvas -->
+            <div class="frame-caption-box" id="canvas-brand-footer">
+              <div class="frame-logo-area">
+                <svg viewBox="0 0 100 100" aria-hidden="true" width="16" height="16">
+                  <circle cx="50" cy="50" r="44" stroke="#F5F1E8" stroke-width="2" fill="none" />
+                  <circle cx="50" cy="50" r="40" stroke="#C9A35A" stroke-width="1" fill="none" />
+                  <text x="50" y="62" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="38" fill="#F5F1E8">HH</text>
+                </svg>
+                <span>HARBOUR HOUSE • RYDE MARINA</span>
+              </div>
+              <div class="frame-caption-text" id="canvas-caption-overlay-text">
+                Join us for Sunset Sessions on the harbour wall. #RydeMarina
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: Photography and Asset Library -->
+    <section id="gallery" class="container" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Photography &amp; Asset Library</h2>
+      
+      <!-- Filter Tabs -->
+      <div class="photo-library-tabs" role="tablist" aria-label="Asset library filters">
+        <button class="btn btn-secondary filter-tab-btn active" data-filter="all" style="min-height: 38px; font-size: 0.75rem; padding: 4px 12px;">All Assets (16)</button>
+        <button class="btn btn-secondary filter-tab-btn" data-filter="reference" style="min-height: 38px; font-size: 0.75rem; padding: 4px 12px;">Reference (4)</button>
+        <button class="btn btn-secondary filter-tab-btn" data-filter="concept" style="min-height: 38px; font-size: 0.75rem; padding: 4px 12px;">Concepts (12)</button>
+      </div>
+
+      <!-- Assets grid -->
+      <div class="photo-grid" id="asset-library-grid-container">
+        <!-- Loaded dynamically by JS -->
+      </div>
+    </section>
+
+    <!-- SECTION 9: Quality Control & Settings -->
+    <section id="governance" class="container" aria-labelledby="governance-title">
+      <h2 id="governance-title">Quality Control &amp; Settings</h2>
+      
+      <!-- User Preferences Panel -->
+      <div class="settings-panel">
+        <div class="settings-card">
+          <label class="switch" aria-label="Toggle High Contrast Mode">
+            <input type="checkbox" id="toggle-high-contrast">
+            <span class="slider"></span>
+          </label>
+          <div class="settings-info">
+            <h4>High Contrast Mode</h4>
+            <p>Increases text readability for accessibility compliance.</p>
+          </div>
+        </div>
+
+        <div class="settings-card">
+          <label class="switch" aria-label="Toggle Reduced Motion">
+            <input type="checkbox" id="toggle-reduced-motion">
+            <span class="slider"></span>
+          </label>
+          <div class="settings-info">
+            <h4>Reduced Motion</h4>
+            <p>Stops hero zoom and slow image animations.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compliance Auditor Checklist -->
+      <div class="grid-2">
+        <div>
+          <h3>Staff Brand Auditor</h3>
+          <p style="margin-bottom: var(--space-md);">
+            Ensure all materials follow brand guidelines before publishing. Your ticks persist in <code>localStorage</code>.
+          </p>
+          
+          <div id="compliance-checklist-container">
+            <!-- Loaded by JS -->
+          </div>
+        </div>
+
+        <!-- Technical and Export Specs sheet -->
+        <div>
+          <h3>Export Dimensions Cheat Sheet</h3>
+          <p style="margin-bottom: var(--space-md);">
+            Reference dimensions for creating social banners, menu cards, and web layouts.
+          </p>
+          
+          <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; background-color: var(--white); border: 1px solid var(--light-gray); border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+            <thead>
+              <tr style="background-color: var(--ivory); border-bottom: 2px solid var(--sand);">
+                <th style="padding: 10px; text-align: left;">Format</th>
+                <th style="padding: 10px; text-align: right;">Size (Pixels / Paper)</th>
+                <th style="padding: 10px; text-align: left;">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--light-gray);">
+                <td style="padding: 10px; font-weight: bold;">Instagram Portrait</td>
+                <td style="padding: 10px; text-align: right;">1080 × 1350</td>
+                <td style="padding: 10px; font-size: 0.75rem; color: var(--dark-gray);">Primary food/drink post size. Fits more vertical screen space.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--light-gray);">
+                <td style="padding: 10px; font-weight: bold;">Instagram Square</td>
+                <td style="padding: 10px; text-align: right;">1080 × 1080</td>
+                <td style="padding: 10px; font-size: 0.75rem; color: var(--dark-gray);">Standard grid format. Best for clean vector lockups.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--light-gray);">
+                <td style="padding: 10px; font-weight: bold;">Story / Reel Cover</td>
+                <td style="padding: 10px; text-align: right;">1080 × 1920</td>
+                <td style="padding: 10px; font-size: 0.75rem; color: var(--dark-gray);">Ensure focal points stay within center 80% safe text zone.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--light-gray);">
+                <td style="padding: 10px; font-weight: bold;">Facebook Event</td>
+                <td style="padding: 10px; text-align: right;">1920 × 1005</td>
+                <td style="padding: 10px; font-size: 0.75rem; color: var(--dark-gray);">Best for Sundown Acoustic event promotions.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--light-gray);">
+                <td style="padding: 10px; font-weight: bold;">Website Hero Banner</td>
+                <td style="padding: 10px; text-align: right;">1920 × 1080</td>
+                <td style="padding: 10px; font-size: 0.75rem; color: var(--dark-gray);">Crop background for desktop displays. Keep logo centered.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--light-gray);">
+                <td style="padding: 10px; font-weight: bold;">Print Menu (Mains)</td>
+                <td style="padding: 10px; text-align: right;">A4 (210 × 297 mm)</td>
+                <td style="padding: 10px; font-size: 0.75rem; color: var(--dark-gray);">Printed on premium textured 300gsm cream card stock.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footnotes Footer -->
+  <footer role="contentinfo">
+    <div class="footer-logo">
+      <img src="assets/brand/logo-monogram.svg" alt="Harbour House circular monogram logo-monogram.svg">
+    </div>
+    <p class="footer-text" style="font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px;">
+      Harbour House Ryde
+    </p>
+    <p class="footer-text" style="font-size: 0.75rem;">
+      &copy; 2026 Harbour House Beach Bar &amp; Grill, Ryde Marina, Isle of Wight. All rights reserved.
+    </p>
+    
+    <!-- Version and Approval Panel -->
+    <div style="margin-top: 15px; font-size: 0.7rem; border-top: 1px solid rgba(245,241,232,0.15); padding-top: 15px; color: var(--sand); max-width: 400px; margin-left: auto; margin-right: auto; line-height: 1.5; font-family: var(--font-body);">
+      <p style="margin-bottom: 2px;"><strong>Showcase Status:</strong> Management Review (Version 1.0)</p>
+      <p style="margin-bottom: 2px;"><strong>Last Updated:</strong> 13 June 2026</p>
+      <p style="margin-bottom: 0;"><strong>Approved By:</strong> Pending Review</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Gallery Popup (Hidden by default) -->
+  <div class="lightbox" id="image-lightbox-popup" role="dialog" aria-modal="true" aria-label="Image detail preview overlay">
+    <button class="lightbox-close-btn" id="btn-close-lightbox" aria-label="Close image popup">&times;</button>
+    <div class="lightbox-content-box">
+      <div class="lightbox-img-area">
+        <button class="lightbox-nav-btn prev-btn" id="btn-lightbox-prev" aria-label="Previous image">&lt;</button>
+        <img src="" id="lightbox-fullres-img" alt="Zoomed in asset">
+        <button class="lightbox-nav-btn next-btn" id="btn-lightbox-next" aria-label="Next image">&gt;</button>
+      </div>
+      <div class="lightbox-details-area">
+        <span class="asset-badge" id="lightbox-status-badge">Reference</span>
+        <h3 id="lightbox-title-text" style="margin-top: 15px;">Asset Title</h3>
+        <p id="lightbox-desc-text" style="font-size: 0.85rem; margin-bottom: 15px;">Description text.</p>
+        
+        <h4 style="font-family: var(--font-body); font-size: 0.85rem; margin-bottom: 5px; color: var(--gold);">WHY THIS WORKS:</h4>
+        <div class="asset-why-works" id="lightbox-why-works-text" style="margin-bottom: 15px;">Rationale details.</div>
+        
+        <h4 style="font-family: var(--font-body); font-size: 0.85rem; margin-bottom: 5px; color: var(--navy);">APPROVED USES:</h4>
+        <div class="asset-meta-tags" id="lightbox-usage-tags-container">
+          <!-- JS injects tags -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript App Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

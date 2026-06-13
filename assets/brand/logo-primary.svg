@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg-fill { fill: none; }
+      .navy-line { stroke: #0E1A2B; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .gold-accent { stroke: #C9A35A; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .solid-navy { fill: #0E1A2B; }
+      .solid-gold { fill: #C9A35A; }
+      .banner-bg { fill: #F5F1E8; stroke: #0E1A2B; stroke-width: 1.5; }
+      
+      /* Typography */
+      .text-title { font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-weight: normal; fill: #0E1A2B; letter-spacing: 4px; text-anchor: middle; }
+      .text-subtitle { font-family: 'Montserrat', Helvetica, sans-serif; font-size: 11px; font-weight: 600; fill: #0E1A2B; letter-spacing: 6px; text-anchor: middle; text-transform: uppercase; }
+      .text-location { font-family: 'Montserrat', Helvetica, sans-serif; font-size: 9px; font-weight: 500; fill: #C9A35A; letter-spacing: 5px; text-anchor: middle; text-transform: uppercase; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" class="bg-fill" />
+
+  <!-- Scale-down Building Elevation (Shifted Upwards) -->
+  <g transform="translate(100, 10) scale(0.375)">
+    <!-- Ground line -->
+    <line x1="50" y1="280" x2="750" y2="280" class="navy-line" style="stroke-width: 2.5;" />
+    
+    <!-- Central Building -->
+    <rect x="280" y="180" width="240" height="100" class="navy-line" />
+    <polygon points="270,180 400,90 530,180" class="navy-line" style="stroke-width: 2.5;" />
+    <polygon points="278,180 400,98 522,180" class="gold-accent" />
+    <rect x="370" y="210" width="60" height="70" class="navy-line" />
+    <line x1="400" y1="210" x2="400" y2="280" class="navy-line" />
+    
+    <!-- Cupola/Spire -->
+    <line x1="400" y1="90" x2="400" y2="60" class="navy-line" style="stroke-width: 2;" />
+    <polygon points="395,60 400,50 405,60" class="solid-navy" />
+    <circle cx="400" cy="70" r="3" class="solid-gold" />
+    
+    <!-- Left Canopy -->
+    <line x1="100" y1="205" x2="100" y2="280" class="navy-line" style="stroke-width: 2;" />
+    <line x1="160" y1="198" x2="160" y2="280" class="navy-line" />
+    <line x1="220" y1="190" x2="220" y2="280" class="navy-line" />
+    <line x1="90" y1="205" x2="280" y2="180" class="navy-line" style="stroke-width: 2.5;" />
+    
+    <!-- Right Canopy -->
+    <line x1="700" y1="205" x2="700" y2="280" class="navy-line" style="stroke-width: 2;" />
+    <line x1="640" y1="198" x2="640" y2="280" class="navy-line" />
+    <line x1="580" y1="190" x2="580" y2="280" class="navy-line" />
+    <line x1="520" y1="180" x2="710" y2="205" class="navy-line" style="stroke-width: 2.5;" />
+
+    <!-- Balustrades -->
+    <line x1="100" y1="240" x2="280" y2="240" class="navy-line" />
+    <line x1="520" y1="240" x2="700" y2="240" class="navy-line" />
+
+    <!-- Flagpoles & Flags -->
+    <line x1="100" y1="205" x2="100" y2="80" class="navy-line" style="stroke-width: 1.5;" />
+    <path d="M 100,85 C 85,80 85,95 70,90 L 70,110 C 85,115 85,100 100,105 Z" fill="#F5F1E8" stroke="#0E1A2B" stroke-width="1.2" />
+    
+    <line x1="700" y1="205" x2="700" y2="80" class="navy-line" style="stroke-width: 1.5;" />
+    <path d="M 700,85 C 715,80 715,95 730,90 L 730,110 C 715,115 715,100 700,105 Z" fill="#F5F1E8" stroke="#0E1A2B" stroke-width="1.2" />
+    
+    <!-- Foreground Railing -->
+    <line x1="50" y1="250" x2="750" y2="250" class="navy-line" style="stroke-width: 2;" />
+    <line x1="60" y1="250" x2="60" y2="280" class="navy-line" />
+    <line x1="140" y1="250" x2="140" y2="280" class="navy-line" />
+    <line x1="300" y1="250" x2="300" y2="280" class="navy-line" />
+    <line x1="500" y1="250" x2="500" y2="280" class="navy-line" />
+    <line x1="660" y1="250" x2="660" y2="280" class="navy-line" />
+    <line x1="740" y1="250" x2="740" y2="280" class="navy-line" />
+  </g>
+
+  <!-- Typography / Text block -->
+  <!-- Primary Title -->
+  <text x="250" y="175" class="text-title">HARBOUR HOUSE</text>
+  
+  <!-- Divider Line -->
+  <line x1="180" y1="195" x2="320" y2="195" class="gold-accent" style="stroke-width: 1.5;" />
+  <circle cx="250" cy="195" r="3" class="solid-gold" />
+  
+  <!-- Subtitle -->
+  <text x="250" y="225" class="text-subtitle">BEACH BAR &amp; GRILL</text>
+  
+  <!-- Location -->
+  <text x="250" y="255" class="text-location">RYDE MARINA</text>
+
+</svg>

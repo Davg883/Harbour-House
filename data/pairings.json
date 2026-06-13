@@ -1,0 +1,66 @@
+[
+  {
+    "dishId": "item-moules",
+    "dishName": "Moules marinière",
+    "pairingType": "wine",
+    "pairingName": "Ormarine, Picpoul de Pinet (France)",
+    "description": "The crisp acidity and mineral undertones of Picpoul cut through the creaminess of the white wine and garlic sauce, highlighting the fresh Isle of Wight mussels.",
+    "status": "proposed"
+  },
+  {
+    "dishId": "item-calamari",
+    "dishName": "Crispy Salt & Pepper Calamari",
+    "pairingType": "wine",
+    "pairingName": "Brightwater Bay, Sauvignon Blanc (SA)",
+    "description": "Zesty tropical fruits and fresh grass notes complement the spicy kick of chilli and the salt & pepper batter.",
+    "status": "proposed"
+  },
+  {
+    "dishId": "item-sirloin",
+    "dishName": "HH 10oz Sirloin",
+    "pairingType": "wine",
+    "pairingName": "32 South, Malbec (Argentina)",
+    "description": "A full-bodied Malbec with plum and spice notes, providing structured tannins that pair beautifully with a medium-rare steak.",
+    "status": "proposed"
+  },
+  {
+    "dishId": "item-gambas",
+    "dishName": "Gambas Pil Pil",
+    "pairingType": "wine",
+    "pairingName": "Amori, Pinot Grigio Blush (Italy)",
+    "description": "A light, refreshing blush wine that balances the fiery chorizo heat and garlic butter richness without overpowering the prawns.",
+    "status": "proposed"
+  },
+  {
+    "dishId": "item-burger",
+    "dishName": "HH 6oz Burger",
+    "pairingType": "wine",
+    "pairingName": "Ladera Verde, Merlot (Chile)",
+    "description": "Smooth red fruits and soft tannins pair perfectly with grilled beef, pancetta, and sweet onion relish.",
+    "status": "proposed"
+  },
+  {
+    "dishId": "item-fish-chips",
+    "dishName": "Fish & Chips",
+    "pairingType": "beer",
+    "pairingName": "Cruzcampo (Draught Beer, 4.4%)",
+    "description": "A clean, crisp Spanish lager served ice-cold. The refreshing carbonation cleanses the palate after rich, crispy battered fish.",
+    "status": "proposed"
+  },
+  {
+    "dishId": "item-skewer",
+    "dishName": "Malaysian Chicken Skewer",
+    "pairingType": "beer",
+    "pairingName": "Alpacalypse IPA (Draught Beer, 4.3%)",
+    "description": "Hoppy and floral notes of local craft IPA cut through coconut and lemongrass aromatic spices.",
+    "status": "proposed"
+  },
+  {
+    "dishId": "item-meatballs",
+    "dishName": "Oven Baked Meatballs",
+    "pairingType": "wine",
+    "pairingName": "Rioja Crianza, Rioja (Spain)",
+    "description": "Medium-bodied with subtle oak and vanilla undertones, matching the baked garlic and red pepper tomato sauce.",
+    "status": "proposed"
+  }
+]

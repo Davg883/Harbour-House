@@ -1,0 +1,247 @@
+[
+  {
+    "id": "ref-menu-cover",
+    "src": "assets/images/reference/menus/menu_cover.jpg",
+    "thumbnail": "assets/images/reference/menus/menu_cover.jpg",
+    "title": "Harbour House Menu Cover",
+    "category": "menus",
+    "status": "reference",
+    "alt": "Front cover of the physical Harbour House food and drink menu, showing illustrated sea creatures like a turtle, pineapple, octopus, and crab.",
+    "whyItWorks": "Establishes the physical brand identity with organic, hand-drawn coastal illustrations and a clean typeface layout.",
+    "usage": [
+      "print menu",
+      "brand introduction",
+      "physical collateral"
+    ],
+    "watermark": false
+  },
+  {
+    "id": "ref-menu-mains",
+    "src": "assets/images/reference/menus/menu_mains.jpg",
+    "thumbnail": "assets/images/reference/menus/menu_mains.jpg",
+    "title": "Mains & Tapas Menu Details",
+    "category": "menus",
+    "status": "reference",
+    "alt": "Physical printed menu sheet showing mains such as Fish & Chips, Burgers, Sirloin Steaks, and Tapas selections.",
+    "whyItWorks": "Shows the authentic culinary offerings and simple editorial styling used in the venue.",
+    "usage": [
+      "menu layout guide",
+      "pricing consistency"
+    ],
+    "watermark": false
+  },
+  {
+    "id": "ref-menu-cocktails",
+    "src": "assets/images/reference/menus/menu_cocktails.jpg",
+    "thumbnail": "assets/images/reference/menus/menu_cocktails.jpg",
+    "title": "Cocktail & Mocktail Menu Details",
+    "category": "menus",
+    "status": "reference",
+    "alt": "Physical printed menu listing extensive cocktail and mocktail lists, categorized with price details.",
+    "whyItWorks": "Provides the baseline cocktail options and pricing guidelines for bar staff and promotion.",
+    "usage": [
+      "bar reference",
+      "drink naming guide"
+    ],
+    "watermark": false
+  },
+  {
+    "id": "ref-menu-drinks",
+    "src": "assets/images/reference/menus/menu_drinks.jpg",
+    "thumbnail": "assets/images/reference/menus/menu_drinks.jpg",
+    "title": "Draught Beer & Wine List Menu Details",
+    "category": "menus",
+    "status": "reference",
+    "alt": "Physical printed menu listing draught beer, cider, and white, red, rosé, and sparkling wine selections.",
+    "whyItWorks": "Defines the beverage guidelines and approved brands served at the venue.",
+    "usage": [
+      "beverage program guide",
+      "wine card reference"
+    ],
+    "watermark": false
+  },
+  {
+    "id": "concept-event-jazz",
+    "src": "assets/images/concepts/events/event_jazz.png",
+    "thumbnail": "assets/images/concepts/events/event_jazz.png",
+    "title": "Sundown Jazz Session Promotion",
+    "category": "events",
+    "status": "concept",
+    "alt": "Concept flyer for a Sundown Jazz session featuring live music, saxophonist illustration, and warm sunset background.",
+    "whyItWorks": "Demonstrates the integration of live entertainment events with the signature sunset branding.",
+    "usage": [
+      "social promo template",
+      "event poster inspiration"
+    ],
+    "watermark": true
+  },
+  {
+    "id": "concept-food-seafood",
+    "src": "assets/images/concepts/food/food_seafood_platter.png",
+    "thumbnail": "assets/images/concepts/food/food_seafood_platter.png",
+    "title": "Seafood Platter Concept",
+    "category": "food",
+    "status": "concept",
+    "alt": "Beautifully styled seafood platter featuring oysters, lobster, and prawns arranged on ice with lemon slices.",
+    "whyItWorks": "Highlights premium, local coastal ingredients under bright, clean natural daylight.",
+    "usage": [
+      "website hero",
+      "instagram grid post",
+      "editorial menu photography"
+    ],
+    "watermark": true
+  },
+  {
+    "id": "concept-food-drink-sunset",
+    "src": "assets/images/concepts/food/drink_sunset_cocktail.png",
+    "thumbnail": "assets/images/concepts/food/drink_sunset_cocktail.png",
+    "title": "Golden Hour Sunset Cocktail",
+    "category": "food",
+    "status": "concept",
+    "alt": "A vibrant sunset cocktail garnished with citrus on a wooden table, overlooking yachts at Ryde Marina during sunset.",
+    "whyItWorks": "Captures the essence of the sunset experience, connecting the drink directly to the location.",
+    "usage": [
+      "sunset promotion",
+      "social banner",
+      "website background"
+    ],
+    "watermark": true
+  },
+  {
+    "id": "concept-venue-sunset",
+    "src": "assets/images/concepts/venue/venue_sunset_view.png",
+    "thumbnail": "assets/images/concepts/venue/venue_sunset_view.png",
+    "title": "Marina Sunset Outdoor Seating",
+    "category": "venue",
+    "status": "concept",
+    "alt": "Concept rendering of outdoor dining tables at Harbour House overlooking Ryde Marina under a rich orange sunset.",
+    "whyItWorks": "Emphasizes the signature al fresco guest experience and the primary selling point: sunset marina views.",
+    "usage": [
+      "corporate booking package",
+      "homepage banner"
+    ],
+    "watermark": true
+  },
+  {
+    "id": "concept-social-find-us",
+    "src": "assets/images/concepts/social/social_find_us.png",
+    "thumbnail": "assets/images/concepts/social/social_find_us.png",
+    "title": "Find Harbour House Banner",
+    "category": "social",
+    "status": "concept",
+    "alt": "Find Harbour House social poster showing the building facade lit with warm fairy lights and boats moored at Ryde Marina.",
+    "whyItWorks": "Combines brand typography, the logo, and a visual locator to direct guests to the venue.",
+    "usage": [
+      "facebook cover",
+      "instagram feed promo",
+      "location announcement"
+    ],
+    "watermark": true
+  },
+  {
+    "id": "concept-venue-branding-guide",
+    "src": "assets/images/concepts/venue/branding_guidelines.png",
+    "thumbnail": "assets/images/concepts/venue/branding_guidelines.png",
+    "title": "Visual Identity System Concept",
+    "category": "venue",
+    "status": "concept",
+    "alt": "Concept sheet detailing the primary logo, badge, typography families, and color swatches.",
+    "whyItWorks": "Serves as the visual style sheet for all designers and marketing staff to reference.",
+    "usage": [
+      "brand style overview",
+      "agency onboarding"
+    ],
+    "watermark": true
+  },
+  {
+    "id": "concept-social-sharing-plates",
+    "src": "assets/images/concepts/social/social_sharing_plates.png",
+    "thumbnail": "assets/images/concepts/social/social_sharing_plates.png",
+    "title": "Sharing Plates by the Marina",
+    "category": "social",
+    "status": "concept",
+    "alt": "A wooden tray with sourdough bread, dipping oils, tapas, and a fish bowl with yachts in the background.",
+    "whyItWorks": "Shows a sociable guest experience, placing the viewer at the table looking out at the marina.",
+    "usage": [
+      "instagram promo",
+      "food story",
+      "website booking page"
+    ],
+    "watermark": true
+  },
+  {
+    "id": "concept-social-burger",
+    "src": "assets/images/concepts/social/social_burger_spec.png",
+    "thumbnail": "assets/images/concepts/social/social_burger_spec.png",
+    "title": "Harbour House Burger Promo",
+    "category": "social",
+    "status": "concept",
+    "alt": "Social graphic highlighting the 6oz burger with pancetta and chips on a rustic table.",
+    "whyItWorks": "Features comfort food options in a casual yet premium styling.",
+    "usage": [
+      "lunch menu promotion",
+      "special offer graphics"
+    ],
+    "watermark": true
+  },
+  {
+    "id": "concept-social-cocktails-sea",
+    "src": "assets/images/concepts/social/social_cocktails_sea.png",
+    "thumbnail": "assets/images/concepts/social/social_cocktails_sea.png",
+    "title": "Cocktails by the Sea Banner",
+    "category": "social",
+    "status": "concept",
+    "alt": "Five distinct cocktails lined up on wooden boards on the quay wall with boats in the background during golden hour.",
+    "whyItWorks": "Promotes the extensive drink menu in a premium, social seafront atmosphere.",
+    "usage": [
+      "sunset promotion",
+      "bar header banner"
+    ],
+    "watermark": true
+  },
+  {
+    "id": "concept-venue-night-dining",
+    "src": "assets/images/concepts/venue/venue_night_dining.png",
+    "thumbnail": "assets/images/concepts/venue/venue_night_dining.png",
+    "title": "Night Dining & Evening Vibe",
+    "category": "venue",
+    "status": "concept",
+    "alt": "Evening concept of the Harbour House decking with glowing lights and groups dining under a deep navy night sky.",
+    "whyItWorks": "Demonstrates the transition of the venue from daytime casual to evening intimate dining.",
+    "usage": [
+      "website dinner page",
+      "evening group package"
+    ],
+    "watermark": true
+  },
+  {
+    "id": "concept-social-mussels",
+    "src": "assets/images/concepts/social/social_mussels.png",
+    "thumbnail": "assets/images/concepts/social/social_mussels.png",
+    "title": "Moules marinière Platter Concept",
+    "category": "social",
+    "status": "concept",
+    "alt": "A steaming pot of Moules marinière served with toasted sourdough bread on a wooden deck table.",
+    "whyItWorks": "Showcases the iconic local mussels dish in a coastal setting.",
+    "usage": [
+      "menu feature",
+      "instagram food highlight"
+    ],
+    "watermark": true
+  },
+  {
+    "id": "concept-social-mussels-alt",
+    "src": "assets/images/concepts/social/social_mussels_alt.png",
+    "thumbnail": "assets/images/concepts/social/social_mussels_alt.png",
+    "title": "Moules marinière Outdoor Dining Concept",
+    "category": "social",
+    "status": "concept",
+    "alt": "An alternative view of the mussels pot served outdoor overlooking boats.",
+    "whyItWorks": "Reiterates the fresh seafood offering directly connected to the sea.",
+    "usage": [
+      "alternate menu image",
+      "social collage"
+    ],
+    "watermark": true
+  }
+]
