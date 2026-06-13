@@ -13,6 +13,7 @@ This document registers the 18 core image assets utilized in the Harbour House B
 | `ref-menu-mains` | `assets/images/reference/menus/menu_mains.jpg` | Mains &amp; Tapas Details | Menus | Printed menu sheet listing dishes and pricing. | Menu layout guides, typography sizing. |
 | `ref-menu-cocktails` | `assets/images/reference/menus/menu_cocktails.jpg` | Cocktail Menu Details | Menus | Printed cocktail menu sheet. | Bar naming guide, drink menus. |
 | `ref-menu-drinks` | `assets/images/reference/menus/menu_drinks.jpg` | Wine &amp; Beer Details | Menus | Printed wine and beer list page. | Beverage reference, print cards. |
+| `ref-venue-sunset` | `assets/images/reference/building/venue_actual_sunset.png` | Harbour House Sunset Deck | Venue | Real photograph of building facade, flagpoles, and guests socializing on waterfront deck. | Homepage banner, gallery featured. |
 
 ---
 
@@ -24,7 +25,6 @@ This document registers the 18 core image assets utilized in the Harbour House B
 | `concept-event-jazz` | `concepts/events/event_jazz.png` | Jazz Session Poster | Events | Saxophonist illustration on sunset background. | Demonstrates integration of live acoustics with sunset palette. |
 | `concept-food-seafood` | `concepts/food/food_seafood_platter.png` | Seafood Platter | Food | Fresh lobster, prawns, and oysters on ice. | Emphasises clean natural lighting and premium local catches. |
 | `concept-food-drink-sunset` | `concepts/food/drink_sunset_cocktail.png` | Sunset Cocktail | Food | Cocktail overlooking yachts at Ryde Marina. | Connects drink promotions directly to our water setting. |
-| `concept-venue-sunset` | `concepts/venue/venue_sunset_view.png` | Marina Sunset Deck | Venue | Dining tables under sunset marina views. | Highlights our primary venue asset: al fresco sunset views. |
 | `concept-social-find-us` | `concepts/social/social_find_us.png` | Find Us Social Graphic | Social | Facade lit with fairy lights and boats. | Combines typography guidelines with building landmarks. |
 | `concept-venue-branding-guide` | `concepts/venue/branding_guidelines.png` | Style Cheat Sheet | Venue | Style sheet showing primary logo, colors, fonts. | Onboarding template for graphic designers. |
 | `concept-social-sharing-plates` | `concepts/social/social_sharing_plates.png` | Sharing plates by water | Social | Tapas board with marina background. | Promotes a social, relaxed dining atmosphere. |

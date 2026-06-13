@@ -822,6 +822,8 @@ const ChecklistItems = [
 // Fallback Data for offline file:// execution mode
 
 // Fallback Data for offline file:// execution mode
+
+// Fallback Data for offline file:// execution mode
 const FallbackData = {
   images: [
   {
@@ -933,19 +935,19 @@ const FallbackData = {
     "watermark": true
   },
   {
-    "id": "concept-venue-sunset",
-    "src": "assets/images/concepts/venue/venue_sunset_view.png",
-    "thumbnail": "assets/images/concepts/venue/venue_sunset_view.png",
-    "title": "Marina Sunset Outdoor Seating",
+    "id": "ref-venue-sunset",
+    "src": "assets/images/reference/building/venue_actual_sunset.png",
+    "thumbnail": "assets/images/reference/building/venue_actual_sunset.png",
+    "title": "Harbour House Sunset Deck",
     "category": "venue",
-    "status": "concept",
-    "alt": "Concept rendering of outdoor dining tables at Harbour House overlooking Ryde Marina under a rich orange sunset.",
-    "whyItWorks": "Emphasizes the signature al fresco guest experience and the primary selling point: sunset marina views.",
+    "status": "reference",
+    "alt": "Real photograph of the Harbour House building facade, flagpoles, and guests socializing on the waterfront deck during sunset.",
+    "whyItWorks": "Captures the authentic architecture, waterfront placement, and lively sunset guest atmosphere in a single real photo.",
     "usage": [
-      "corporate booking package",
-      "homepage banner"
+      "homepage banner",
+      "gallery featured"
     ],
-    "watermark": true
+    "watermark": false
   },
   {
     "id": "concept-social-find-us",
