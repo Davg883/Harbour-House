@@ -1099,23 +1099,34 @@ function initMenuExplorer() {
     const cat = categories[catIdx];
     if (!cat) return;
 
-    itemsContainer.innerHTML = cat.items.map(item => `
-      <div class="menu-item-card" data-id="${item.id}">
-        <div class="menu-item-header">
-          <div class="menu-item-name">${item.name}</div>
-          <div class="menu-item-price">£${item.price.toFixed(2)}</div>
-        </div>
-        <div class="menu-item-desc">${item.description}</div>
-        ${item.markers && item.markers.length ? `
-          <div class="item-markers">
-            ${item.markers.map(m => `<span class="item-marker-badge">${m}</span>`).join("")}
+    itemsContainer.innerHTML = cat.items.map(item => {
+      let priceDisplay = "";
+      if (typeof item.price === "number") {
+        priceDisplay = `£${item.price.toFixed(2)}`;
+      } else if (typeof item.price === "string") {
+        priceDisplay = item.price.startsWith("£") ? item.price : `£${item.price}`;
+      } else {
+        priceDisplay = item.price || "";
+      }
+
+      return `
+        <div class="menu-item-card" data-id="${item.id}">
+          <div class="menu-item-header">
+            <div class="menu-item-name">${item.name}</div>
+            <div class="menu-item-price">${priceDisplay}</div>
           </div>
-        ` : ''}
-        ${item.allergens && item.allergens.length ? `
-          <div class="item-allergens">Allergens: ${item.allergens.join(", ")}</div>
-        ` : ''}
-      </div>
-    `).join("");
+          <div class="menu-item-desc">${item.description}</div>
+          ${item.markers && item.markers.length ? `
+            <div class="item-markers">
+              ${item.markers.map(m => `<span class="item-marker-badge">${m}</span>`).join("")}
+            </div>
+          ` : ''}
+          ${item.allergens && item.allergens.length ? `
+            <div class="item-allergens">Allergens: ${item.allergens.join(", ")}</div>
+          ` : ''}
+        </div>
+      `;
+    }).join("");
   }
 }
 
