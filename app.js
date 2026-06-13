@@ -719,7 +719,7 @@ const BrandState = {
           ]
       }
   ],
-    pairings: pairings: [
+  pairings: [
     { "dishId": "item-moules", "dishName": "Moules marinière", "pairingType": "wine", "pairingName": "Ormarine, Picpoul de Pinet (France)", "description": "The crisp acidity and mineral undertones of Picpoul cut through the creaminess of the white wine and garlic sauce, highlighting the fresh Isle of Wight mussels.", "status": "proposed" },
     { "dishId": "item-calamari", "dishName": "Crispy Salt & Pepper Calamari", "pairingType": "wine", "pairingName": "Brightwater Bay, Sauvignon Blanc (SA)", "description": "Zesty tropical fruits and fresh grass notes complement the spicy kick of chilli and the salt & pepper batter.", "status": "proposed" },
     { "dishId": "item-sirloin", "dishName": "HH 10oz Sirloin", "pairingType": "wine", "pairingName": "32 South, Malbec (Argentina)", "description": "A full-bodied Malbec with plum and spice notes, providing structured tannins that pair beautifully with a medium-rare steak.", "status": "proposed" },
