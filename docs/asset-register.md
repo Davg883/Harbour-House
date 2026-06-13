@@ -1,6 +1,6 @@
 # Brand Asset Register
 
-This document registers the 16 core image assets utilized in the Harbour House Brand Showcase, categorized by their approval and reference statuses.
+This document registers the 18 core image assets utilized in the Harbour House Brand Showcase, categorized by their approval and reference statuses.
 
 ---
 
@@ -33,3 +33,13 @@ This document registers the 16 core image assets utilized in the Harbour House B
 | `concept-venue-night-dining` | `concepts/venue/venue_night_dining.png` | Decking Night Vibe | Venue | Outdoor lights and groups dining at night. | Visualises the transition from sunset to intimate evening ambiance. |
 | `concept-social-mussels` | `concepts/social/social_mussels.png` | Mussels Pot | Social | Mussels steamed in white wine on deck. | Focuses on our signature dish in a waterfront context. |
 | `concept-social-mussels-alt` | `concepts/social/social_mussels_alt.png` | Mussels Pot detail | Social | Alternative angle of mussels pot. | Strong secondary visual option for food promotion collages. |
+
+---
+
+## 3. Proposed Public Website Direction
+*Conceptual mockups demonstrating the future responsive website revamp direction.*
+
+| Asset ID | File Path | Title | Category | Alt Text Summary | Rationale (Why it works) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `website-revamp-desktop` | `assets/images/concepts/website/desktop_revamp_mockup.png` | Desktop Website Revamp | Website | Desktop redesign of the public website. | Demonstrates the premium modern coastal aesthetic and enhanced commercial calls-to-action on desktop devices. |
+| `website-revamp-mobile` | `assets/images/concepts/website/mobile_revamp_mockup.png` | Mobile Website Revamp | Website | Mobile redesign of the public website. | Demonstrates a responsive, touch-friendly viewport design that prioritizes key mobile user interactions. |

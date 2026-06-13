@@ -243,5 +243,35 @@
       "social collage"
     ],
     "watermark": true
+  },
+  {
+    "id": "website-revamp-desktop",
+    "src": "assets/images/concepts/website/desktop_revamp_mockup.png",
+    "thumbnail": "assets/images/concepts/website/desktop_revamp_mockup.png",
+    "title": "Desktop Website Revamp",
+    "category": "website",
+    "status": "proposed",
+    "alt": "Proposed desktop redesign of the Harbour House public website",
+    "whyItWorks": "Demonstrates the premium modern coastal aesthetic and enhanced commercial calls-to-action on desktop devices.",
+    "usage": [
+      "proposed public website direction",
+      "website redesign mockup"
+    ],
+    "watermark": true
+  },
+  {
+    "id": "website-revamp-mobile",
+    "src": "assets/images/concepts/website/mobile_revamp_mockup.png",
+    "thumbnail": "assets/images/concepts/website/mobile_revamp_mockup.png",
+    "title": "Mobile Website Revamp",
+    "category": "website",
+    "status": "proposed",
+    "alt": "Proposed mobile redesign of the Harbour House public website",
+    "whyItWorks": "Demonstrates a responsive, touch-friendly viewport design that prioritizes key mobile user interactions.",
+    "usage": [
+      "proposed public website direction",
+      "website redesign mockup"
+    ],
+    "watermark": true
   }
 ]
